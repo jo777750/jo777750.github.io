@@ -1,0 +1,14 @@
+{
+  "description":"Reference Guide",
+  "start_url": "https://jo777750.github.io/pages/index.html",
+  "display": "standalone",
+"manifest_version": 2,
+  "name":"Awesome application",
+  "short_name": "Awesome app",
+  "theme_color":"green",
+"icons": [
+  {
+    "src": "./favicon.ico"
+  }
+  ]
+}

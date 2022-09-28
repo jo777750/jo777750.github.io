@@ -1,0 +1,112 @@
+/*all css properties are nt inheritable
+layoutt can be grid or flex
+then define elements in the layout
+
+*/
+
+body {
+font-family: sans-serif;
+}
+
+a:link, a:visited
+{
+color: blue;
+font-weight: bold;
+}
+/* python row */
+h1 {
+color: navy;/*sets the font color of the text in h1,note:font-color is invalid*/
+background-color: yellow;
+border-radius: 45px;
+border-style: groove;
+width:50%; /* Defines the width as a percentage of the containing block's width which is the screen here.*/
+border-bottom: 10px solid purple;/*controls on how border bottom looks like*/
+letter-spacing:6px;
+
+}
+.highlight {
+background-color: yellow;
+text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+.rx
+{
+font-size:40px;
+float:right;
+}
+nav{/*burger contents is NOT Diplayed initially (until clicked)*/
+display:none;
+}
+#test{float:right;}
+
+/* clockwise:margin : top | right | bottom | left
+   margin: 2px 1em 0 auto;
+ */
+
+footer {
+background-color: cyan;
+text-decoration:none;/*removes the  underline in the link*/
+border-radius: 45px;
+margin: 10px 10px 100px 0px;
+text-align: center;
+width:40%; /* Defines the width as a percentage of the containing block's width.*/
+}
+/* python firstrow */
+#firstrow {
+background-color: cyan;
+margin-top: 10px 100px 10px 0px;
+border-radius: 45px;
+
+float:right;
+width:40%; /* as items gonna float around this class so some space aka wdth shuld be given to them.Defines the width as a percentage of the containing block's width.*/
+
+}
+/* others secondrow */
+#secondrow {
+color: purple;
+background-color: lightgrey;
+border-radius: 45px;
+margin-top: 10px 100px 10px 0px;
+width:40%; /* Defines the width as a percentage of the containing block's width.*/
+
+}
+/* miscellaneous thirdrow */
+#thirdrow {
+background-color: lightgrey;
+border-radius: 45px;
+margin: 10px 100px 10px 0px;
+width:40%; /* Defines the width as a percentage of the containing block's width.*/
+
+}
+
+#tryout {
+color:magenta;
+position: fixed;
+font-weight:bold;
+font-size: 18px;
+
+top: 40px;
+right: 200px;
+width: 280px;
+
+}
+
+
+.alig {
+text-align: center;
+}
+/*.y li{ display: inline; } always breaks the list horizontally*/
+.my_flexx {
+display: flex;
+flex-wrap: wrap;
+background-color: green;
+justify-content: left;
+}
+.my_flexx  div {
+background-color: deepskyblue;/*will override the green color*/
+margin: 8px;
+padding: 20px;
+font-size: 18px;
+}
+ div a {text-decoration:none;}
+.arow a{text-decoration:none;}
+ 
