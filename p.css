@@ -7,7 +7,7 @@ button{
     line-height: 3.5;
     padding: 0 20px;
     font-size: 1rem;
-    text-align: center;
+    text-align: center;/*align the text f the button to the center*/
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;

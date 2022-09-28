@@ -5,6 +5,7 @@ then define elements in the layout
 */
 
 body {
+background: url('paper.jpg');   
 font-family: sans-serif;
 }
 
@@ -53,11 +54,11 @@ width:40%; /* Defines the width as a percentage of the containing block's width.
 /* python firstrow */
 #firstrow {
 background-color: cyan;
-margin-top: 10px 100px 10px 0px;
+margin: 10px 100px 10px 0px;
 border-radius: 45px;
 
 float:right;
-width:40%; /* as items gonna float around this class so some space aka wdth shuld be given to them.Defines the width as a percentage of the containing block's width.*/
+width:43%; /* as items gonna float around this class so some space aka wdth shuld be given to them.Defines the width as a percentage of the containing block's width.*/
 
 }
 /* others secondrow */
@@ -65,7 +66,7 @@ width:40%; /* as items gonna float around this class so some space aka wdth shul
 color: purple;
 background-color: lightgrey;
 border-radius: 45px;
-margin-top: 10px 100px 10px 0px;
+margin: 10px 100px 10px 0px;
 width:40%; /* Defines the width as a percentage of the containing block's width.*/
 
 }
@@ -74,12 +75,12 @@ width:40%; /* Defines the width as a percentage of the containing block's width.
 background-color: lightgrey;
 border-radius: 45px;
 margin: 10px 100px 10px 0px;
-width:40%; /* Defines the width as a percentage of the containing block's width.*/
+width:43%; /* Defines the width as a percentage of the containing block's width.*/
 
 }
 
 #tryout {
-color:magenta;
+color:tomato;
 position: fixed;
 font-weight:bold;
 font-size: 18px;
