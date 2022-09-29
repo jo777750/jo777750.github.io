@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', () => {
+
+
 /* let temp = [];
 let	arrayOfStrings=[];
 document.addEventListener('DOMContentLoaded', () => {
@@ -61,3 +64,5 @@ return false;
 temp.push(z);
 arrayOfStrings = temp.join("");
 }
+
+});
