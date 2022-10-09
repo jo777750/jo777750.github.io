@@ -1,8 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
 //---------------------------------
+ 
+ async function parallel() {
+  console.log("==PARALLEL with await Promise.all==");
+
+  // Start 5 "jobs" in parallel and wait for them to complete
+  await Promise.all([
+    (async () => console.log(await toggleNav1()))(),
+    (async () => console.log(await a()))(),
+    (async () => console.log(await b()))(),
+    (async () => console.log(await c()))(),
+    (async () => console.log(await d()))(),
+
+  ]);
+}
+ 
+ parallel();
+ 
+function toggleNav1(){
  document.querySelector('.rx').addEventListener('click', toggleNav1);
-function toggleNav1()
-{
+
 if(document.querySelector('#test').style.display != "block")
 {
 console.log("if block");
@@ -14,12 +31,15 @@ console.log("else block");
 document.querySelector('#test').style.display = 'none';
 //console.log(document.querySelector('#test').style.display);
 }
+return Promise.resolve(1);
 }
 //-------------------------------------------------------
 //JSONkeys should be unique
 //there for "./subscribe.html":"subscribe",\
 // and same: "./subscribe.html":"subscribe",\
 //will throw an erro
+function a(){
+
 let tr='{"https://create-react-app.dev/docs/getting-started":"React Start",\
 "https://scrimba.com/learn/learnreact/first-react-coc0845dcb1a26cb0769a2fea":"React training",\
 "https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_accent-color":"CSS Playaround",\
@@ -43,8 +63,11 @@ d1.innerHTML=`<a href=${key}>${obj121[key]}</a>`;
 document.querySelector('.my_flexx').appendChild(d1);
 console.log(d1);
 }
+return Promise.resolve(2);
+}
 //--------------------------------------------------
 // Make a list
+function b(){
 let str='{"":"Others:",\
 "https://reactjs.org/docs/hello-world.html":"React hello world",\
 "https://codereview.stackexchange.com":"STACKOVERFLOW CODE REVIEW",\
@@ -103,7 +126,11 @@ a1.setAttribute('href', key);
 a1.innerHTML=a1.title+"<br>";//perfect place using to put a new line
 document.getElementById('firstrow').appendChild(a1);
 }
+
+return Promise.resolve(3);
+}
 //--------------------------------------------------
+function c(){
 let json2 = '{"https://developers.google.com/edu/python/regular-expressions":"Python regular expressions",\
 "https://learnbyexample.github.io/py_regular_expressions/anchors.html":"Python regular",\
 "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do/231855#231855":"PYTHON YIELD KEYWORD",\
@@ -137,7 +164,10 @@ x1.innerHTML=`<a href=${key}>${obj2[key]}</a>`;
 //x1.innerHTML="<a href=" + key + ">" + obj2[key]+"</a>";
 ol.appendChild(x1);
 }
+return Promise.resolve(4);
+}
 //--------------------------------------------------
+function d(){
 const json6 = '{"result":"true",\
 "count":"42"}';
 const obj6 = JSON.parse(json6);
@@ -190,4 +220,6 @@ console.log(`a1 is ${a1}`);
 a1.innerHTML=a1.title;
 document.getElementById('arow').appendChild(a1);
 //--------------------------------------------------
+return Promise.resolve(5);
+}
 });
