@@ -100,10 +100,14 @@ text-align: center;
 display: flex;
 flex-wrap: wrap;
 background-color: green;
-justify-content: left;
 }
 .my_flexx  div {
 background-color: deepskyblue;/*will override the green color*/
+ flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 14%;
+box-shadow: 3px 3px 3px 3px rgb(255, 99, 71);
+border-radius: 25% 10%;
 margin: 8px;
 padding: 20px;
 font-size: 18px;
