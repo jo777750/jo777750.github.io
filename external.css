@@ -22,7 +22,7 @@ color: navy;/*sets the font color of the text in h1,note:font-color is invalid*/
 background-color: yellow;
 border-radius: 45px;
 border-style: groove;
-width:50%; /* Defines the width as a percentage of the containing block's width which is the screen here.*/
+width:40%; /* Defines the width as a percentage of the containing block's width which is the screen here.*/
 border-bottom: 10px solid purple;/*controls on how border bottom looks like*/
 letter-spacing:6px;
 
