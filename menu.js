@@ -148,7 +148,7 @@ document.getElementById('json').appendChild(a1);
 for (const property in cc) {
   console.log(`${property}: ${cc[property]}`);}
 });
-fetch('https://www.cnn.com')
+//cors error:fetch('https://www.cnn.com')
  return Promise.resolve(6);
 }
 //--------------------------------------------------
