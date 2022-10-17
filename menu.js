@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //---------------------------------
  
  async function parallel() {
-  console.log("==PARALLEL with await Promise.all==");
+  //console.log("==PARALLEL with await Promise.all==");
 
   // Start 5 "jobs" in parallel and wait for them to complete
   await Promise.all([
@@ -62,7 +62,7 @@ d1.innerHTML=`<a href=${key}>${obj121[key]}</a>`;
 //d1.innerHTML="<a href=" + key + ">" + obj121[key]+"</a>";
 
 document.querySelector('.my_flexx').appendChild(d1);
-console.log(d1);
+//console.log(d1);
 }
 return Promise.resolve(2);
 }
@@ -133,7 +133,7 @@ return Promise.resolve(3);
 //--------------------------------------------------
  
 function e(){
- const myRequest = new Request("a.json");
+ const myRequest = new Request("./a.json");
   console.log(myRequest);
 fetch(myRequest).then (async response => {
 cc=await response.json() 
