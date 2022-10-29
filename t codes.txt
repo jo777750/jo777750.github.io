@@ -1,0 +1,68 @@
+ES32 - Display Installation 
+
+ES31 - Change Installation 
+
+EPRODCUST - IS-U MD Template: Customizing 
+
+ES55 - Create Connect. Object 
+
+ES30 - Create Installation 
+
+ES60 - Create Premise 
+
+ES20 - Create Contract 
+
+ES64 - Change Connection Object 
+
+ES65 - Create Device Loc. 
+
+ES56 - Change Connect. Object 
+
+ES22 - Display Contract 
+
+ES57 - Display Connect. Object 
+
+ES21 - Chg. Contract 
+
+ES51 - Create Ownership 
+
+EC55C - Tabstrip- ISU - Move-Out 
+
+
+Read more: http://www.tcodesearch.com/transaction-codes/search?module=is-u#ixzz46up8pqvo
+
+
+EC85 - Create Disc. Doc. 
+
+ECRMREPL - Error Handling Replication CRM/IS-U 
+
+EC86 - Change Disc. Doc. 
+
+EC50E - Create Move-In Document 
+
+EC30 - Maintain rate data 
+
+EC55E - Move-Out 
+
+EC70 - Accel.Entry: Move-In / Out / In/Out 
+
+EC20 - IS-U Front Office 
+
+ECNC - IS-U Navigator: Customizing 
+
+EC50 - Create Move-In Doc. 
+
+EC60 - Initial Processing: Move-In/Out 
+
+EN50 - No. Range Maint.: ISU_EEIN 
+
+EWBC - Customizing: Front Office Processes 
+
+EC87 - Display Disc. Doc. 
+
+EC56E - Change Move-Out 
+
+..... - ..................................
+
+
+Read more: http://www.tcodesearch.com/transaction-codes/search?module=is-u#ixzz46upOiCxx

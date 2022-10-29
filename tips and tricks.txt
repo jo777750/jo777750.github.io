@@ -1,0 +1,229 @@
+C:\Users\JAISIMHA\anaconda3\condabin
+
+In Python, variables that are only referenced inside a function are implicitly global. If a variable is assigned a value anywhere within the function’s body, it’s assumed to be a local unless explicitly declared as global.
+
+x = 10
+def bar():
+    print(x)
+bar()
+output:10
+bcoz What this means is that if a variable is never assigned to in a function's body, then it will be treated as global so it picks up 10..
+
+x = 10
+def foo():
+    print(x)
+    x += 1
+	
+output: UnboundLocalError:
+
+>>>
+foo()
+Traceback (most recent call last):
+  ...
+UnboundLocalError: local variable 'x' referenced before assignment bcoz If a variable is assigned a value anywhere within the function’s body, it’s assumed to be a local unless explicitly declared as global.
+
+
+
+x = 10
+def foobar():
+    global x
+    print(x)
+    x += 1
+foobar()
+10
+-----------------
+
+[] list
+{} set
+() tuple
+
+-----------------
+
+ collection of modules (a “package
+ 
+ ---------------
+ 
+ import math
+print(f'The value of pi is approximately {math.pi:.3f}.')
+The value of pi is approximately 3.142.
+print(f'The value of pi is approximately {math.pi:.37}.')
+The value of pi is approximately 3.141592653589793115997963468544185162.
+print(f'The value of pi is approximately {math.pi:.37}')
+The value of pi is approximately 3.141592653589793115997963468544185162
+print(f'The value of pi is approximately {math.pi:.7}')
+The value of pi is approximately 3.141593
+print(f'The value of pi is approximately {math.pi:.7f}')
+The value of pi is approximately 3.1415927
+print(f'The value of pi is approximately {math.pi:.37f}')
+The value of pi is approximately 3.1415926535897931159979634685441851616
+
+
+------------------
+
+nice formatting
+table = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 7678}
+for name, phone in table.items():
+    print(f'{name:10} ==> {phone:10d}')
+
+    
+Sjoerd     ==>       4127
+Jack       ==>       4098
+Dcab       ==>       7678
+--------------
+
+
+repr.
+f='ggh'
+repr(f)
+"'ggh'"
+f="ggh"
+repr(f)
+"'ggh'"
+------------
+
+
+name = "Julie Ertz"
+number = 8
+position = "midfielder"
+gpg = 0.23
+print("%s (%d) is a %s averaging %.2f goals/game." % (name,number,position,gpg))
+Julie Ertz (8) is a midfielder averaging 0.23 goals/game.
+print("%s (%d) is a %s averaging %.1f goals/game." % (name,number,position,gpg))
+Julie Ertz (8) is a midfielder averaging 0.2 goals/game.
+
+
+
+------------------
+
+
+if __name__ == '__main__':
+
+What are dunder methods?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What are the rules for local and global variables in Python?
+In Python, variables that are only referenced inside a function are implicitly global. If a variable is assigned a value anywhere within the function’s body, it’s assumed to be a local unless explicitly declared as globa
+
+strings cant be changed but workarund like below:
+
+>>> import io
+>>> s = "Hello, world"
+>>> sio = io.StringIO(s)
+>>> sio.getvalue()
+'Hello, world'
+>>> sio.seek(7)
+7
+>>> sio.write("there!")
+6
+>>> sio.getvalue()
+'Hello, there!'
+
+--------------------
+
+>>>color = "fish"
+>>>color
+'fish'
+>>>color = 12
+>>>color
+12
+
+-------------
+
+color = "yellow"
+day = "Monday"
+print("conc",color + day) 
+ print(day*8)
+ 
+ output is:
+ 
+conc yellowMonday
+MondayMondayMondayMondayMondayMondayMondayMonday
+---------------
+
+import calendar
+calendar.prmonth(2022,5)
+
+
+-----
+JOIN FUNCTION
+
+myTuple = ("John", "Peter", "Vicky")
+
+x = "#".join(myTuple)
+
+print(x)
+
+----
+
+>>> list(range(5, 10))
+[5, 6, 7, 8, 9]
+
+>>> list(range(0, 10, 3))
+[0, 3, 6, 9]
+
+-----------------
+
+
+class x:
+
+    def foo():
+        print("hi")
+
+x1=x()
+x1.foo()
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    x1.foo()
+TypeError: x.foo() takes 0 positional arguments but 1 was given
+
+When you call a method on a class (such as foo() in this case), Python automatically passes self as the first argument to the function.
+
+So when Python tells you "foo() takes 0 positional arguments but 1 was given", it's telling you that your method is set up to take no arguments, but the self argument is still being passed when the method is called, so in fact it is receiving one argument.
+
+Adding self to your method definition should resolve the problem.
+
+def foo(self):
+    pass  # Do stuff here
+Alternatively, you can make the method static, in which case Python will not pass self as the first argument:
+
+@staticmethod
+def foo():
+    pass  # Do stuff here
+
+----------------------------------------------------------
+
+
+
+
+C:\Users\JAISIMHA\anaconda3\condabin>
+
+
