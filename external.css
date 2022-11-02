@@ -87,7 +87,7 @@ width:43%; /* Defines the width as a percentage of the containing block's width.
 
 #tryout {
 color:tomato;
-position: fixed;
+position: sticky;
 font-weight:bold;
 font-size: 18px;
 
