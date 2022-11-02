@@ -17,12 +17,13 @@ a
     		color: darkcyan;
     		font-weight: bold;
 	}
+	
+	&:hover { 
+    		color: orangered;
+	}
 }
 
-a:hover, a:active
-{
-    color: purple;
-}
+
 
 
 .flex-container {
