@@ -7,11 +7,19 @@ body
 	text-align:center;
 }
 
-a:link, a:visited
+a
 {
-    color: blue;
-    font-weight: bold;
-}
+	
+	&:link { 
+    		color: blue;
+    		font-weight: bold;
+	}
+	
+	&:visited { 
+    		color: blue;
+    		font-weight: bold;
+	}
+		}
 
 a:hover, a:active
 {
