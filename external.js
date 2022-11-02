@@ -45,7 +45,7 @@ let tr='{"https://create-react-app.dev/docs/getting-started":"React Start",\
 "https://scrimba.com/learn/learnreact/first-react-coc0845dcb1a26cb0769a2fea":"React training",\
 "https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_accent-color":"CSS Playaround",\
 "./page1.html":"NextPage",\
-"./flipcard.html":"Flipcard",\
+"./img/flipcard.html":"Flipcard",\
 "./subscribe.html":"subscribe",\
 "./futureuse.html":"future use",\
 "./futureuse1.html":"future use",\
