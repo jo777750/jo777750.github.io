@@ -6,20 +6,18 @@ body
 #alig {
 	text-align:center;
 }
-
 a
 {
-	
 	&:link { 
     		color: red;
     		font-weight: bold;
 	}
 	
 	&:visited { 
-    		color: blue;
+    		color: darkcyan;
     		font-weight: bold;
 	}
-		}
+}
 
 a:hover, a:active
 {
