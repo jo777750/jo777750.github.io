@@ -4,8 +4,11 @@ then define elements in the layout
 
 */
 
+
 html {
     scroll-behavior: smooth;
+     scroll-padding-top:30px;   
+
     color-scheme:dark;
   }
 
