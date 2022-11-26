@@ -559,11 +559,29 @@ body {
   font-family: sans-serif;
   text-decoration:none;
 }
+/* links:LVHA Order */
+/* Unvisited links */
 
-a:link, a:visited
-{
+a:link {
   color: blue;
-  font-weight: bold;
+}
+
+/* Visited links */
+
+a:visited {
+  color: purple;
+}
+
+/* Hovered links */
+
+a:hover {
+  background: yellow;
+}
+
+/* Active links */
+
+a:active {
+  color: red;
 }
 
 /* python row */
