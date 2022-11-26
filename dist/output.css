@@ -431,7 +431,6 @@ video {
   --tw-scale-y: 1;
   --tw-pan-x:  ;
   --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
@@ -578,10 +577,10 @@ a:hover {
   background: yellow;
 }
 
-/* Active links */
+/* click on  link and the :active makes it to the color specified to it */
 
 a:active {
-  color: red;
+  color: tomato;
 }
 
 /* python row */
