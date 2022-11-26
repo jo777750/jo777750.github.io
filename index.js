@@ -229,7 +229,9 @@ ul = document.createElement('ul');
 document.getElementById('secondrow').appendChild(ul);
 for (var key in obj1){
 x= document.createElement('li');
-x.innerHTML=`<a href=${key}">"${obj1[key]}</a>`;
+//x.innerHTML=`<a href=${key}">"${obj1[key]}</a>`;
+ x.innerHTML=`<a href=${key}>${obj1[key]}</a>`;
+
 //x.innerHTML="<a href=" + key + ">" + obj1[key]+"</a>";//css text decoration will not work as ahref is hard coded so make element a as shown above then it will work.Also there is no 'title' attribute which can be set.
 ul.appendChild(x);
 }
