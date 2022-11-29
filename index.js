@@ -133,7 +133,7 @@ return Promise.resolve(3);
 //--------------------------------------------------
  
 function e(){
- const myRequest = new Request("./a.json");
+ const myRequest = new Request("./json/a.json");
   console.log(myRequest);
 fetch(myRequest).then (async response => {
 cc=await response.json() 
