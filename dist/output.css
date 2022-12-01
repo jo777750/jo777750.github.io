@@ -47,7 +47,6 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
-  margin-left: 2em;
 }
 
 /*
@@ -432,6 +431,7 @@ video {
   --tw-scale-y: 1;
   --tw-pan-x:  ;
   --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
@@ -513,34 +513,27 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mt-2 {
+.tw-mt-2 {
   margin-top: 0.5rem;
 }
 
-.block {
-  display: block;
-}
-
-.flex {
-  display: flex;
-}
-
-.table {
-  display: table;
-}
-
-.text-lg {
+.tw-text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.text-yellow-600 {
+.tw-text-yellow-600 {
   --tw-text-opacity: 1;
   color: rgb(202 138 4 / var(--tw-text-opacity));
 }
 
-.underline {
+.tw-underline {
   text-decoration-line: underline;
+}
+
+.tw-antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*all css properties are nt inheritable
@@ -552,14 +545,15 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top:30px;
   color-scheme:dark;
+  margin-left: 4em;
 }
 
 body {
   /*background: url('paper.jpg'); */
-/*  font-family: sans-serif;*/
+  font-family: sans-serif;
   text-decoration:none;
 }
-/* links:LVHA Order */
+
 /* Unvisited links */
 
 a:link {
@@ -578,10 +572,10 @@ a:hover {
   background: yellow;
 }
 
-/* click on  link and the :active makes it to the color specified to it */
+/* Active links */
 
 a:active {
-  color: tomato;
+  color: red;
 }
 
 /* python row */
