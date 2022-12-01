@@ -54,6 +54,7 @@ html {
   margin-left: 2em;
   margin-right: 2em;
   
+  
 }
 
 /*
@@ -572,7 +573,7 @@ a:hover {
   background: yellow;
 }
 
-/* Active links */
+/*  Active links */
 
 a:active {
   color: red;
