@@ -47,13 +47,6 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
-  
-  scroll-behavior: smooth;
-  scroll-padding-top:30px;
-  color-scheme:dark;
-  margin-left: 4em;
-  margin-right: 4em;
-
 }
 
 /*
@@ -584,7 +577,7 @@ h1 {
   color: navy;
   /*sets the font color of the text in h1,note:font-color is invalid*/
   background-color: yellow;
-  border-radius: 45px;
+  border-radius: 15px;
   border-style: groove;
   width:40%;
   /* Defines the width as a percentage of the containing block's width which is the screen here.*/
@@ -621,7 +614,7 @@ footer {
   background-color: cyan;
   text-decoration:none;
   /*removes the  underline in the link*/
-  border-radius: 45px;
+  border-radius: 15px;
   margin: 10px 10px 100px 0px;
   text-align: center;
   width:40%;
@@ -633,7 +626,7 @@ footer {
 #firstrow {
   background-color: cyan;
   margin: 10px 100px 10px 0px;
-  border-radius: 45px;
+  border-radius: 15px;
   float:right;
   width:43%;
   /* as items gonna float around this class so some space aka wdth shuld be given to them.Defines the width as a percentage of the containing block's width.*/
