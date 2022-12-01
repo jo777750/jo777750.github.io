@@ -47,6 +47,13 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
+      scroll-behavior: smooth;
+  scroll-padding-top:30px;
+  color-scheme:dark;
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  
 }
 
 /*
