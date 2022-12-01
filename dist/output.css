@@ -47,6 +47,12 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
+  
+  scroll-behavior: smooth;
+  scroll-padding-top:30px;
+  color-scheme:dark;
+  margin-left: 4em;
+
 }
 
 /*
@@ -540,13 +546,6 @@ video {
 layoutt can be grid or flex
 then define elements in the layout
 */
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top:30px;
-  color-scheme:dark;
-  margin-left: 4em;
-}
 
 body {
   /*background: url('paper.jpg'); */
