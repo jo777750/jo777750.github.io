@@ -53,8 +53,7 @@ html {
   margin-top: 2em;
   margin-left: 2em;
   margin-right: 2em;
-  
-  
+  text-decoration:none; 
 }
 
 /*
@@ -552,7 +551,7 @@ then define elements in the layout
 body {
   /*background: url('paper.jpg'); */
   font-family: sans-serif;
-  text-decoration:none;
+  
 }
 
 /* Unvisited links */
@@ -694,12 +693,4 @@ footer {
   margin: 8px;
   padding: 20px;
   font-size: 18px;
-}
-
-div a {
-  text-decoration:none;
-}
-
-.arow a{
-  text-decoration:none;
 }
