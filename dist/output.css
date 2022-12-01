@@ -47,13 +47,6 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
-    scroll-behavior: smooth;
-  scroll-padding-top:30px;
-  color-scheme:dark;
-  margin-top: 2em;
-  margin-left: 2em;
-  margin-right: 2em;
-  
 }
 
 /*
@@ -622,7 +615,7 @@ footer {
   text-decoration:none;
   /*removes the  underline in the link*/
   border-radius: 15px;
-  margin: 10px 10px 100px 0px;
+  margin: auto;
   text-align: center;
   width:40%;
   /* Defines the width as a percentage of the containing block's width.*/
