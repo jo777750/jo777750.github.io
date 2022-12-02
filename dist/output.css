@@ -590,7 +590,7 @@ h1 {
   /* Defines the width as a percentage of the containing block's width which is the screen here.*/
   border-bottom: 10px solid purple;
   /*controls on how border bottom looks like*/
-  letter-spacing:6px;
+  letter-spacing:2px;
 }
 
 .highlight {
