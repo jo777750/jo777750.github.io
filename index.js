@@ -176,8 +176,8 @@ let json2 = '{"https://developers.google.com/edu/python/regular-expressions":"Py
 "https://wiki.python.org/moin/PythonDecoratorLibrary":"WIKI PYTHON DECORATOR",\
 "https://mathspp.com/blog/pydonts/set-and-frozenset":"PYTHON Set and frozen set",\
 "https://mathspp.com/blog/problems/sliding-coins#solvers":"PYTHON problems",\
-"https://realpython.com/python-versions-docker/":"Docker and python"\
-"https://realpython.com/python-versions-docker/":"Docker and python"\
+"https://realpython.com/python-versions-docker/":"Docker and python",\
+"https://realpython.com/python-versions-docker/":"Docker and python",\
 "https://realpython.com/python-versions-docker/":"Docker and python"\
 }';
 const obj2 = JSON.parse(json2);
