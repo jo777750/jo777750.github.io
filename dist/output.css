@@ -47,13 +47,6 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
-      scroll-behavior: smooth;
-  scroll-padding-top:30px;
-  color-scheme:dark;
-  margin-top: 2em;
-  margin-left: 2em;
-  margin-right: 2em;
-  text-decoration:none; 
 }
 
 /*
@@ -551,31 +544,7 @@ then define elements in the layout
 body {
   /*background: url('paper.jpg'); */
   font-family: sans-serif;
-  
-}
-
-/* Unvisited links */
-
-a:link {
-  color: blue;
-}
-
-/* Visited links */
-
-a:visited {
-  color: purple;
-}
-
-/* Hovered links */
-
-a:hover {
-  background: yellow;
-}
-
-/*  Active links */
-
-a:active {
-  color: red;
+  text-decoration:none;
 }
 
 /* python row */
@@ -632,6 +601,7 @@ footer {
 
 #firstrow {
   background-color: cyan;
+  font-family: inherit;
   margin: 10px 100px 10px 0px;
   border-radius: 15px;
   float:right;
@@ -648,6 +618,7 @@ footer {
   margin: 10px 100px 10px 0px;
   width:40%;
   /* Defines the width as a percentage of the containing block's width.*/
+  font-family: inherit;
 }
 
 /* miscellaneous thirdrow */
@@ -658,6 +629,7 @@ footer {
   margin: 10px 100px 10px 0px;
   width:43%;
   /* Defines the width as a percentage of the containing block's width.*/
+  font-family: inherit;
 }
 
 #tryout {
@@ -693,4 +665,36 @@ footer {
   margin: 8px;
   padding: 20px;
   font-size: 18px;
+}
+
+div a {
+  text-decoration:none;
+}
+
+.arow a{
+  text-decoration:none;
+}
+
+/* Visited links */
+
+a:visited {
+  color: purple;
+}
+
+/* Unvisited links */
+
+a:link {
+  color: blue;
+}
+
+/* Hovered links */
+
+a:hover {
+  background: yellow;
+}
+
+/*  Active links */
+
+a:active {
+  color: red;
 }
