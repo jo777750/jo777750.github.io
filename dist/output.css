@@ -582,7 +582,7 @@ nav{
  */
 
 footer {
-  background-color: cyan;
+  background-color: teal;
   text-decoration:none;
   /*removes the  underline in the link*/
   border-radius: 15px;
@@ -625,6 +625,15 @@ footer {
   width:43%;
   /* Defines the width as a percentage of the containing block's width.*/
   font-family: inherit;
+}
+
+#json {
+  background-color: cyan;
+  font-family: inherit;
+  margin: 10px 100px 10px 0px;
+  border-radius: 15px;
+  width:43%;
+  /* as items gonna float around this class so some space aka wdth shuld be given to them.Defines the width as a percentage of the containing block's width.*/
 }
 
 #tryout {
