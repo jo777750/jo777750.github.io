@@ -513,27 +513,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.tw-mt-2 {
-  margin-top: 0.5rem;
+.block {
+  display: block;
 }
 
-.tw-text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.flex {
+  display: flex;
 }
 
-.tw-text-yellow-600 {
-  --tw-text-opacity: 1;
-  color: rgb(202 138 4 / var(--tw-text-opacity));
-}
-
-.tw-underline {
-  text-decoration-line: underline;
-}
-
-.tw-antialiased {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.table {
+  display: table;
 }
 
 /*all css properties are nt inheritable
