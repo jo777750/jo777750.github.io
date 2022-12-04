@@ -548,9 +548,9 @@ body {
   scroll-behavior: smooth;
   scroll-padding-top:30px;
   color-scheme:dark;
-  margin-top: 2em;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
 }
 
 /* python row */
@@ -559,7 +559,7 @@ h1 {
   color: navy;
   /*sets the font color of the text in h1,note:font-color is invalid*/
   background-color: yellow;
-  border-radius: 15px;
+  border-radius: 5px;
   border-style: groove;
   width:40%;
   /* Defines the width as a percentage of the containing block's width which is the screen here.*/
@@ -619,8 +619,8 @@ footer {
 
 #secondrow {
   color: purple;
-  background-color: lightgrey;
-  border-radius: 45px;
+  background-color: grey;
+  border-radius: 15px;
   margin: 10px 100px 10px 0px;
   width:40%;
   /* Defines the width as a percentage of the containing block's width.*/
@@ -631,7 +631,7 @@ footer {
 
 #thirdrow {
   background-color: lightgrey;
-  border-radius: 45px;
+  border-radius: 15px;
   margin: 10px 100px 10px 0px;
   width:43%;
   /* Defines the width as a percentage of the containing block's width.*/
@@ -705,7 +705,7 @@ a:active {
   color: red;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 150px) {
   /* styles for browsers larger than 960px; */
 }
 
