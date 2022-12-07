@@ -703,7 +703,9 @@ a:active {
   color: red;
 }
 
-a [href="https://today.bnomial.com/?20220720"]
+/*target only these href below...*/
+
+a[href="https://today.bnomial.com/?20220720"]
 {
   color:teal;
 }
