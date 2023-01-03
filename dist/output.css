@@ -206,9 +206,28 @@ textarea {
 Remove the inheritance of text transform in Edge and Firefox.
 */
 
+button,
+select {
+  text-transform: none;
+}
 
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
 
-  
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
 /*
 Use the modern Firefox focus style for all focusable elements.
 */
@@ -517,7 +536,6 @@ body {
   text-decoration:none;
   scroll-behavior: smooth;
   scroll-padding-top:30px;
-  color-scheme:dark;
   margin-top: 1.5em;
   margin-left: 1.2em;
   margin-right: 1.2em;
