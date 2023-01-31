@@ -47,7 +47,7 @@ let tr='{"https://create-react-app.dev/docs/getting-started":"React Start",\
 "./page1.html":"NextPage",\
 "./img/flipcard.html":"Flipcard",\
 "./subscribe.html":"subscribe",\
-"./futureuse.html":"future use",\
+"./react.html":"React stuff",\
 "./futureuse1.html":"future use",\
 "./futureuse.2html":"future use",\
 "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#using_addeventlistener":"event listeners"\
