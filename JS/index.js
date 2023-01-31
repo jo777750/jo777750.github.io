@@ -70,8 +70,8 @@ return Promise.resolve(2);
 // Make a list
 function b(){
 let str='{"":"Others:",\
-"https://javascript.info/modules-intro":"javascript modules"\
-"https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export":"2nd MDN example javascript modules"\
+"https://javascript.info/modules-intro":"javascript.info modules",\
+"https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export":"2nd MDN example javascript modules",\
 "https://reactjs.org/docs/hello-world.html":"React hello world",\
 "https://codereview.stackexchange.com":"STACKOVERFLOW CODE REVIEW",\
 "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox":"MDN FLEXBOX",\
