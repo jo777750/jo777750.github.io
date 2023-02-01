@@ -100,8 +100,8 @@ function Data1() {
 //----------------------------------
 
 var user = {
-  name: 'B Spears',
-  imageUrl: 'https://imgur.com/t/brittany_spears/N0TflIP',
+  name: 'Hedy Lamarr',
+  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
   imageSize: 90
 };
 
@@ -125,3 +125,5 @@ function Profile() {
     })
   );
 }
+
+//--------------------------------
