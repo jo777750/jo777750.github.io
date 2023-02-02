@@ -22,6 +22,6 @@ xhr.send(null);
  */
 					
 document.getElementById('test_html').addEventListener('click', () => {
-          	  window.open("../test.html","JS Calci");
+          	  window.open("../Calculator.html","JS Calci");
         
            });
