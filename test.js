@@ -102,7 +102,7 @@ root6.render(element6);
 var user = {
   name: 'Hedy Lamarr',
   imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-  imageSize: 900
+  imageSize: 9000
 };
 
 function Profile() {
