@@ -29,7 +29,7 @@ function MyApp() {
     React.createElement(
       'h1',
       null,
-      'Counter updates SEPEARATELY'
+      'Counter updates SEPARATELY'
     ),
     React.createElement('hr', null),
     React.createElement(MyButton, null),
@@ -102,7 +102,7 @@ root6.render(element6);
 var user = {
   name: 'Hedy Lamarr',
   imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-  imageSize: 90
+  imageSize: 900
 };
 
 function Profile() {
