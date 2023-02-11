@@ -2,25 +2,46 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+	<link rel="icon" type="./x-icon" href="./favicon.ico">
     <title>Test Page-React</title>
 	 	<style>
+				button {
+					background: linear-gradient(#fecaca, #FFFF99);
+					
+					   }
 
-  button {
-    background: linear-gradient(#fecaca, #FFFF99);
+				button:hover {
+				   color:rebeccapurple;
+					
+					   }
+
+
+h3 {
+  width: 0px;
+  color: red;
+  border:2px solid rebeccapurple;
+  overflow:hidden;
+  animation: animate 5s ease-in 1 forwards;
 }
 
-h3{
-color:red; 
+
+@keyframes animate{
+  0%{
+    width: 0;
+  }
+  100%{
+    width:300px;
+  }
 }
-	</style>
+
+				a{text-decoration:none;}
+				
+ 
+	    </style>
   </head>
   <body>
  
-<link rel="icon" type="./x-icon" href="./favicon.ico">
-
-<h3>https://beta.reactjs.org/learn/describing-the-ui</h3>
-<h4>https://transform.tools/html-to-jsx</h4>  
-<h5>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules</h5>
+<div id="links"></div>
 <div id="root"></div>
 <div id="tworoot"></div>
 <div id="buton"></div>
@@ -34,15 +55,15 @@ color:red;
 <div id="ShoppingList"></div>
 <div id="Sc"></div>
 <div id="Xy"></div>
-     <!-- Load  React. -->
+<div id="JSTextContent"></div>
+<div id="JSInnertext"></div>
+    
+	<!-- Load  React. -->
     <!-- Note: if deploying, replace "development.js" with "production.min.js". -->
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  <!-- Load your React component. -->
-<div id="divA">This iszzz<span>fffsome</span> text!</div>
-
- <script type="module" src="test.js"></script>
-
   
+  <!-- Load your React component. -->
+  <script type="module" src="test.js"></script>
   </body>
 </html>

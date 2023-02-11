@@ -102,7 +102,7 @@ root6.render(element6);
 var user = {
   name: 'Hedy Lamarr',
   imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-  imageSize: 9000
+  imageSize: 90
 };
 
 function Profile() {
@@ -221,7 +221,7 @@ export function getImageUrl(person) {
 }
 var x = [1, 2, 3, 4];
 var y = [].concat(x, [999]);
-alert(x);
+//alert(x)
 var fuser = {
   name: 'Sonu Gukku'
 };
@@ -240,14 +240,14 @@ var root = ReactDOM.createRoot(document.getElementById('root'));
 var element = React.createElement(
   'h1',
   null,
-  'Hello, 1234world'
+  'Hello world'
 );
 root.render(element);
 var root1 = ReactDOM.createRoot(document.getElementById('tworoot'));
 var element1 = React.createElement(
-  'h1',
+  'h3',
   null,
-  'Hello, 5678world'
+  'Hello\xA0round\xA0earth\xA0and\xA0moon'
 );
 root1.render(element1);
 var root4 = ReactDOM.createRoot(document.getElementById('Abt'));
@@ -290,3 +290,74 @@ function MyButton1() {
     'Click me'
   );
 }
+
+var links = ReactDOM.createRoot(document.getElementById('links'));
+links.render(React.createElement(Links, null));
+function Links() {
+  return React.createElement(
+    'ol',
+    null,
+    React.createElement(
+      'li',
+      null,
+      React.createElement(
+        'a',
+        { href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules' },
+        'JS Modules'
+      )
+    ),
+    React.createElement(
+      'li',
+      null,
+      React.createElement(
+        'a',
+        { href: 'https://transform.tools/html-to-jsx ' },
+        'HTML TO JSX'
+      )
+    ),
+    React.createElement(
+      'li',
+      null,
+      React.createElement(
+        'a',
+        { href: 'https://beta.reactjs.org/learn/describing-the-ui' },
+        'REACT UI'
+      )
+    ),
+    React.createElement(
+      'li',
+      null,
+      React.createElement(
+        'a',
+        { href: 'https://beta.reactjs.org/learn/responding-to-events' },
+        'Events handling React'
+      )
+    ),
+    React.createElement(
+      'li',
+      null,
+      React.createElement(
+        'a',
+        { href: 'https://beta.reactjs.org/reference/react/useState#ive-updated-the-state-but-the-screen-doesnt-update' },
+        'React screen update'
+      )
+    ),
+    React.createElement(
+      'li',
+      null,
+      React.createElement(
+        'a',
+        { href: 'https://reactplay.io/ideas/' },
+        'React projects'
+      )
+    )
+  );
+}
+
+var para = document.createElement('p');
+para.textContent = 'This is using javascript TEXTContent property';
+document.getElementById('JSTextContent').append(para);
+
+var para1 = document.createElement('mark');
+para1.innerText = 'This is using javascript INNERTEXT property';
+document.getElementById('JSInnertext').append(para1);
