@@ -7,26 +7,19 @@
 	 	<style>
 				button {
 					background: linear-gradient(#fecaca, #FFFF99);
-					
 					   }
-
 				button:hover {
 				   color:rebeccapurple;
-					
 					   }
-
-
 h3{
   width: 2px;
   color: red;
-  border:5px solid rebeccapurple;
+  padding-bottom:1px;
+  border:4px solid rebeccapurple;
   overflow:hidden;
   animation: animate 2s ease-in 1 forwards;
 }
-
-
 @keyframes animate{
-  
   0%{
     width: 0px;
   }
@@ -34,25 +27,28 @@ h3{
     width:300px;
   }
 }
-
 				a{text-decoration:none;}
-				
- 
+
+				.box {
+          display: flex;
+		  justify-content:space-evenly;
+        }
 	    </style>
   </head>
   <body>
- 
-<div id="links"></div>
-<div id="root"></div>
-<div id="tworoot"></div>
-<div id="threeroot"></div>
+<div class="box">
+  <div id="tworoot"></div>
+  <div id="links"></div>
+  <div id="Abt"></div>
 
+  </div>
+<div id="root"></div>
+<div id="threeroot"></div>
 <div id="buton"></div>
 <div id="buton1"></div>
 <div id="buton"></div>
 <div id="buton11"></div>
 <div id="dummybuton"></div>
-<div id="Abt"></div>
 <div id="datt"></div>
 <div id="prof"></div>
 <div id="ShoppingList"></div>
@@ -60,12 +56,11 @@ h3{
 <div id="Xy"></div>
 <div id="JSTextContent"></div>
 <div id="JSInnertext"></div>
-    
+</div>    
 	<!-- Load  React. -->
     <!-- Note: if deploying, replace "development.js" with "production.min.js". -->
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  
   <!-- Load your React component. -->
   <script type="module" src="./JS/test.js"></script>
   </body>
