@@ -69,6 +69,8 @@ function MyAppSep() {
     React.createElement(MyButtonSep, { count: count, onClick: handleClick })
   );
 }
+//Props are arguments passed into React components.
+// Props are passed to components via HTML attributes. props stands for properties.
 function MyButtonSep(_ref) {
   var count = _ref.count,
       onClick = _ref.onClick;
@@ -82,174 +84,75 @@ function MyButtonSep(_ref) {
   );
 }
 //----------
-var root7 = ReactDOM.createRoot(document.getElementById('dummybuton'));
-var element7 = React.createElement(MyButtonDummy, null);
-root7.render(element7);
-function MyButtonDummy() {
-  return React.createElement(
-    'button',
-    null,
-    'Dummy-ButoonClick'
-  );
-}
 
-//----------------------------------
+function RenderABC() {
+  var words = ['A\xA0for\xA0Amklpple', 'B\xA0for\xA0Boy', 'C\xA0for\xA0Car', 'D\xA0for\xA0Docgggggggtor', 'E\xA0for\xA0Egg', 'F\xA0for\xA0Frog', 'G\xA0for\xA0Girl', 'H\xA0for\xA0Hat', 'I\xA0for\xA0IceCream'];
 
-var root6 = ReactDOM.createRoot(document.getElementById('prof'));
-var element6 = React.createElement(Profile, null);
-root6.render(element6);
+  //const [count=0,setCount]=React.useState(0);
+  //alert(count);
 
-var user = {
-  name: 'Hedy Lamarr',
-  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-  imageSize: 90
-};
 
-function Profile() {
+  /*  React.useEffect(() => {
+  
+      
+      docum ent.title = `after page is loaded the title will change to thish `;
+  	 //display this title after page rendering not before page  rendering which is the normal course
+  //	const timer = setTimeout(() => console.log('Initial timeout!'), 1000);
+  // return () => clearTimeout(timer);
+   
+      //  nIntervId = setInterval(flashText, 1000);
+  
+    }); */
+
   return React.createElement(
     'div',
     null,
     React.createElement(
-      'h1',
+      'h3',
       null,
-      user.name
-    ),
-    React.createElement('img', {
-      className: 'avatar',
-      src: user.imageUrl,
-      alt: 'Photo of ' + user.name,
-      style: {
-        width: user.imageSize,
-        height: user.imageSize
-      }
-    })
-  );
-}
-//--------------------------------
-var root8 = ReactDOM.createRoot(document.getElementById('ShoppingList'));
-var element8 = React.createElement(ShoppingList, null);
-root8.render(element8);
-
-var products = [{ title: 'Cabbage', isFruit: false, id: 1 }, { title: 'Garlic', isFruit: false, id: 2 }, { title: 'Apple', isFruit: true, id: 3 }];
-function ShoppingList() {
-  var listItems = products.map(function (product) {
-    return React.createElement(
-      'li',
-      {
-        key: product.id,
-        style: {
-          color: product.isFruit ? 'magenta' : 'darkgreen'
-        }
-      },
-      product.title
-    );
-  });
-  return React.createElement(
-    'ul',
-    null,
-    listItems
-  );
-}
-function ProfileS() {
-  return React.createElement('img', {
-    src: 'https://i.imgur.com/MK3eW3As.jpg',
-    alt: 'Katherine Johnson'
-  });
-}
-var root9 = ReactDOM.createRoot(document.getElementById('Sc'));
-var element9 = React.createElement(Gallery, null);
-root9.render(element9);
-
-function Gallery() {
-  return React.createElement(
-    'div',
-    null,
-    React.createElement(
-      'div',
-      null,
-      React.createElement(
-        'h1',
-        null,
-        'Amazing scientists'
-      ),
-      React.createElement(ProfileS, null),
-      React.createElement(ProfileS, null),
-      React.createElement(ProfileS, null)
+      words[0]
     ),
     React.createElement(
-      'div',
+      'h3',
       null,
-      React.createElement(ProfileS, null),
-      React.createElement(Pile, null),
-      React.createElement(ProfileS, null)
+      words[1]
     ),
     React.createElement(
-      'div',
+      'h3',
       null,
-      React.createElement(Pile, null)
+      words[2]
+    ),
+    React.createElement(
+      'h3',
+      null,
+      words[3]
+    ),
+    React.createElement(
+      'h3',
+      null,
+      words[4]
+    ),
+    React.createElement(
+      'h3',
+      null,
+      words[5]
+    ),
+    React.createElement(
+      'h3',
+      null,
+      words[6]
+    ),
+    React.createElement(
+      'h3',
+      null,
+      words[7]
     )
   );
 }
-var root10 = ReactDOM.createRoot(document.getElementById('Xy'));
-var element10 = React.createElement(Pile, null);
-root10.render(element10);
-function Pile() {
-  return React.createElement('img', {
-    src: 'https://i.imgur.com/QIrZWGIs.jpg',
-    alt: 'Alan L. Hart'
-  });
-}
-function Parent() {
-  return React.createElement(Child, {
-    person: { name: 'Lin Lanying', imageId: '1bX5QH6' },
-    size: 100
-  });
-}
-function Child() {
-  return React.createElement('img', {
-    className: 'avat',
-    src: 'https://i.imgur.com/1bX5QH6.jpg',
-    alt: 'Lin Lanying',
-    width: 100,
-    height: 100
-  });
-}
-export function getImageUrl(person) {
-  var size = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 's';
 
-  return 'https://i.imgur.com/' + person.imageId + size + '.jpg';
-}
-var x = [1, 2, 3, 4];
-var y = [].concat(x, [999]);
-//alert(x)
-var fuser = {
-  name: 'Sonu Gukku'
-};
-var root5 = ReactDOM.createRoot(document.getElementById('datt'));
-var element5 = React.createElement(Data1, null);
-root5.render(element5);
-function Data1() {
-  //always make 1st letter in CAPS
-  return React.createElement(
-    'h1',
-    null,
-    fuser.name
-  );
-}
-var root = ReactDOM.createRoot(document.getElementById('root'));
-var element = React.createElement(
-  'h1',
-  null,
-  'Hello world'
-);
-root.render(element);
 var root1 = ReactDOM.createRoot(document.getElementById('tworoot'));
-var element1 = React.createElement(
-  'h3',
-  null,
-  'Hello\xA0round\xA0earth\xA0and\xA0moon'
-);
-root1.render(element1);
+root1.render(React.createElement(RenderABC, null));
+
 var root4 = ReactDOM.createRoot(document.getElementById('Abt'));
 var element4 = React.createElement(AboutPage, null);
 root4.render(element4);
@@ -361,3 +264,154 @@ document.getElementById('JSTextContent').append(para);
 var para1 = document.createElement('mark');
 para1.innerText = 'This is using javascript INNERTEXT property';
 document.getElementById('JSInnertext').append(para1);
+
+function ProfileS() {
+  return React.createElement('img', {
+    src: 'https://i.imgur.com/MK3eW3As.jpg',
+    alt: 'Katherine Johnson'
+  });
+}
+var root9 = ReactDOM.createRoot(document.getElementById('Sc'));
+var element9 = React.createElement(Gallery, null);
+root9.render(element9);
+
+function Gallery() {
+  return React.createElement(
+    'div',
+    null,
+    React.createElement(
+      'div',
+      null,
+      React.createElement(
+        'h1',
+        null,
+        'Amazing scientists'
+      ),
+      React.createElement(ProfileS, null),
+      React.createElement(ProfileS, null),
+      React.createElement(ProfileS, null)
+    ),
+    React.createElement(
+      'div',
+      null,
+      React.createElement(ProfileS, null),
+      React.createElement(Pile, null),
+      React.createElement(ProfileS, null)
+    ),
+    React.createElement(
+      'div',
+      null,
+      React.createElement(Pile, null)
+    )
+  );
+}
+
+var x = [1, 2, 3, 4];
+var y = [].concat(x, [999]);
+//alert(x)
+var fuser = {
+  name: 'Sonu Gukku'
+};
+var root5 = ReactDOM.createRoot(document.getElementById('datt'));
+var element5 = React.createElement(Data1, null);
+root5.render(element5);
+function Data1() {
+  //always make 1st letter in CAPS
+  return React.createElement(
+    'h1',
+    null,
+    fuser.name
+  );
+}
+
+var root = ReactDOM.createRoot(document.getElementById('root'));
+var element = React.createElement(
+  'h1',
+  null,
+  'Hello world'
+);
+root.render(element);
+
+var root7 = ReactDOM.createRoot(document.getElementById('dummybuton'));
+var element7 = React.createElement(MyButtonDummy, null);
+root7.render(element7);
+function MyButtonDummy() {
+  return React.createElement(
+    'button',
+    null,
+    'Dummy-ButoonClick'
+  );
+}
+
+//----------------------------------
+
+var root6 = ReactDOM.createRoot(document.getElementById('prof'));
+var element6 = React.createElement(Profile, null);
+root6.render(element6);
+
+var user = {
+  name: 'Hedy Lamarr',
+  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+  imageSize: 90
+};
+
+function Profile() {
+  return React.createElement(
+    'div',
+    null,
+    React.createElement(
+      'h1',
+      null,
+      user.name
+    ),
+    React.createElement('img', {
+      className: 'avatar',
+      src: user.imageUrl,
+      alt: 'Photo of ' + user.name,
+      style: {
+        width: user.imageSize,
+        height: user.imageSize
+      }
+    })
+  );
+}
+//--------------------------------
+var root8 = ReactDOM.createRoot(document.getElementById('ShoppingList'));
+var element8 = React.createElement(ShoppingList, null);
+root8.render(element8);
+
+var products = [{ title: 'Cabbage', isFruit: false, id: 1 }, { title: 'Garlic', isFruit: false, id: 2 }, { title: 'Apple', isFruit: true, id: 3 }];
+function ShoppingList() {
+  var listItems = products.map(function (product) {
+    return React.createElement(
+      'li',
+      {
+        key: product.id,
+        style: {
+          color: product.isFruit ? 'magenta' : 'darkgreen'
+        }
+      },
+      product.title
+    );
+  });
+  return React.createElement(
+    'ul',
+    null,
+    listItems
+  );
+}
+
+var root10 = ReactDOM.createRoot(document.getElementById('Xy'));
+var element10 = React.createElement(Pile, null);
+root10.render(element10);
+function Pile() {
+  return React.createElement('img', {
+    src: 'https://i.imgur.com/QIrZWGIs.jpg',
+    alt: 'Alan L. Hart'
+  });
+}
+export function getImageUrl(person) {
+  var size = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 's';
+
+  return 'https://i.imgur.com/' + person.imageId + size + '.jpg';
+}
