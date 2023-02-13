@@ -11,14 +11,22 @@
 				button:hover {
 				   color:rebeccapurple;
 					   }
-h3{
-  width: 2px;
-  color: red;
-  padding-bottom:1px;
-  border:4px solid rebeccapurple;
+h3:nth-child(even) {
+  width: 0px;
+  color: green;
+  border:5px solid rebeccapurple;
   overflow:hidden;
-  animation: animate 2s ease-in 1 forwards;
+  animation: animate 5s ease-in 1 forwards;
 }
+
+h3:nth-child(odd) {
+  width: 0px;
+  color: tomato;
+  border:5px solid aquamarine;
+  overflow:hidden;
+  animation: animate 5s ease-in 1 forwards;
+}
+
 @keyframes animate{
   0%{
     width: 0px;
