@@ -84,8 +84,11 @@ function MyButtonSep(_ref) {
   );
 }
 //----------
+
+
 function RenderABC() {
   var words = ['A\xA0for\xA0Apple', 'B\xA0for\xA0Boy', 'C\xA0for\xA0Car', 'D\xA0for\xA0Doctor', 'E\xA0for\xA0Egg', 'F\xA0for\xA0Frog', 'G\xA0for\xA0Girl', 'H\xA0for\xA0Hat', 'I\xA0for\xA0IceCream'];
+
   //const word=words.map(function xyz()())
 
   //const [count=0,setCount]=React.useState(0);
