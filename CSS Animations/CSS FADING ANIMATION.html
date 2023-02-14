@@ -3,7 +3,7 @@
 
 <head>
 	<style>
-h3{    
+h3:nth-child(3n+1){    
   opacity: 0;
   animation-name: fadeIn;
 border:5px solid rebeccapurple;
@@ -12,6 +12,24 @@ border:5px solid rebeccapurple;
   animation-fill-mode: forwards;
 
 }
+
+@keyframes animate{
+  0%{
+    width: 0px;
+  }
+  100%{
+    width:100px;
+  }
+}
+
+h3:nth-child(4n+1) {
+  width: 0px;
+  color: red;
+  border:5px solid green;
+  overflow:hidden;
+  animation: animate 6s ease-in 1 forwards;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
