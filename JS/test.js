@@ -1,9 +1,10 @@
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
+import EI from './ExpenseItem.js';
+
 var root2 = ReactDOM.createRoot(document.getElementById('buton'));
 var element2 = React.createElement(MyApp, null);
 root2.render(element2);
-
 function MyButton() {
   var _React$useState = React.useState(0),
       _React$useState2 = _slicedToArray(_React$useState, 2),
@@ -42,7 +43,6 @@ function MyApp() {
 var root11 = ReactDOM.createRoot(document.getElementById('buton11'));
 var element11 = React.createElement(MyAppSep, null);
 root11.render(element11);
-
 function MyAppSep() {
   var _React$useState3 = React.useState(11),
       _React$useState4 = _slicedToArray(_React$useState3, 2),
@@ -84,21 +84,17 @@ function MyButtonSep(_ref) {
   );
 }
 //----------
-
 function RenderABC() {
   var words = ['A\xA0for\xA0Apple', 'B\xA0for\xA0Boy', 'C\xA0for\xA0Car', 'D\xA0for\xA0Doctor', 'E\xA0for\xA0Egg', 'F\xA0for\xA0Frog', 'G\xA0for\xA0Girl', 'H\xA0for\xA0Hat', 'I\xA0for\xA0IceCream'];
+  //const word=words.map(function xyz()())
 
   //const [count=0,setCount]=React.useState(0);
   //alert(count);
-
-
   React.useEffect(function () {
-
     document.title = 'New after page is loaded the title will change to thish ';
     //display this title after page rendering not before page  rendering which is the normal course
     //	const timer = setTimeout(() => console.log('Initial timeout!'), 1000);
     // return () => clearTimeout(timer);
-
     //  nIntervId = setInterval(flashText, 1000);
   });
 
@@ -147,10 +143,8 @@ function RenderABC() {
     )
   );
 }
-
 var root1 = ReactDOM.createRoot(document.getElementById('tworoot'));
 root1.render(React.createElement(RenderABC, null));
-
 var root4 = ReactDOM.createRoot(document.getElementById('Abt'));
 var element4 = React.createElement(AboutPage, null);
 root4.render(element4);
@@ -174,10 +168,11 @@ function AboutPage() {
       ),
       React.createElement('br', null),
       'How do you do?'
-    )
+    ),
+    React.createElement(EI, null),
+    React.createElement(EI, null)
   );
 }
-
 var root3 = ReactDOM.createRoot(document.getElementById('buton1'));
 var element3 = React.createElement(MyButton1, null);
 root3.render(element3);
@@ -191,7 +186,6 @@ function MyButton1() {
     'Click me'
   );
 }
-
 var links = ReactDOM.createRoot(document.getElementById('links'));
 links.render(React.createElement(Links, null));
 function Links() {
@@ -263,15 +257,12 @@ function Links() {
     )
   );
 }
-
 var para = document.createElement('p');
 para.textContent = 'This is using javascript TEXTContent property';
 document.getElementById('JSTextContent').append(para);
-
 var para1 = document.createElement('mark');
 para1.innerText = 'This is using javascript INNERTEXT property';
 document.getElementById('JSInnertext').append(para1);
-
 function ProfileS() {
   return React.createElement('img', {
     src: 'https://i.imgur.com/MK3eW3As.jpg',
@@ -281,7 +272,6 @@ function ProfileS() {
 var root9 = ReactDOM.createRoot(document.getElementById('Sc'));
 var element9 = React.createElement(Gallery, null);
 root9.render(element9);
-
 function Gallery() {
   return React.createElement(
     'div',
@@ -312,10 +302,35 @@ function Gallery() {
     )
   );
 }
-
 var x = [1, 2, 3, 4];
 var y = [].concat(x, [999]);
 //alert(x)
+var parts = ["shoulders", "knees"];
+var lyrics = ["head"].concat(parts, ["and", "toes"]);
+//  ["head", "shoulders", "knees", "and", "toes"]
+function sum(x, y, z) {
+  return x + y + z;
+}
+var numbers1 = [1, 2, 3];
+console.log(sum.apply(undefined, numbers1));
+// Expected output: 6
+var array1 = [1, 4, 9, 16];
+// Pass a function to map
+var map1 = array1.map(function (x) {
+  return x * 2;
+});
+console.log(map1);
+alert(map1);
+var numbers = [2, 4, 6, 8, 10];
+// function to return the square of a number
+function square(number) {
+  return number * number;
+}
+// apply square() function to each item of the numbers list
+var square_numbers = numbers.map(square);
+alert(square_numbers);
+// Output: [ 4, 16, 36, 64, 100 ]
+// Expected output: Array [2, 8, 18, 32]
 var fuser = {
   name: 'Sonu Gukku'
 };
@@ -330,7 +345,6 @@ function Data1() {
     fuser.name
   );
 }
-
 var root = ReactDOM.createRoot(document.getElementById('root'));
 var element = React.createElement(
   'h1',
@@ -338,7 +352,6 @@ var element = React.createElement(
   'Hello world'
 );
 root.render(element);
-
 var root7 = ReactDOM.createRoot(document.getElementById('dummybuton'));
 var element7 = React.createElement(MyButtonDummy, null);
 root7.render(element7);
@@ -349,19 +362,15 @@ function MyButtonDummy() {
     'Dummy-ButoonClick'
   );
 }
-
 //----------------------------------
-
 var root6 = ReactDOM.createRoot(document.getElementById('prof'));
 var element6 = React.createElement(Profile, null);
 root6.render(element6);
-
 var user = {
   name: 'Hedy Lamarr',
   imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
   imageSize: 90
 };
-
 function Profile() {
   return React.createElement(
     'div',
@@ -386,7 +395,6 @@ function Profile() {
 var root8 = ReactDOM.createRoot(document.getElementById('ShoppingList'));
 var element8 = React.createElement(ShoppingList, null);
 root8.render(element8);
-
 var products = [{ title: 'Cabbage', isFruit: false, id: 1 }, { title: 'Garlic', isFruit: false, id: 2 }, { title: 'Apple', isFruit: true, id: 3 }];
 function ShoppingList() {
   var listItems = products.map(function (product) {
@@ -407,7 +415,6 @@ function ShoppingList() {
     listItems
   );
 }
-
 var root10 = ReactDOM.createRoot(document.getElementById('Xy'));
 var element10 = React.createElement(Pile, null);
 root10.render(element10);
