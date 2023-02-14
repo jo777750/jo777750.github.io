@@ -92,17 +92,15 @@ function RenderABC() {
   //alert(count);
 
 
-  /*  React.useEffect(() => {
-  
-      
-      docum ent.title = `after page is loaded the title will change to thish `;
-  	 //display this title after page rendering not before page  rendering which is the normal course
-  //	const timer = setTimeout(() => console.log('Initial timeout!'), 1000);
-  // return () => clearTimeout(timer);
-   
-      //  nIntervId = setInterval(flashText, 1000);
-  
-    }); */
+  React.useEffect(function () {
+
+    document.title = 'New after page is loaded the title will change to thish ';
+    //display this title after page rendering not before page  rendering which is the normal course
+    //	const timer = setTimeout(() => console.log('Initial timeout!'), 1000);
+    // return () => clearTimeout(timer);
+
+    //  nIntervId = setInterval(flashText, 1000);
+  });
 
   return React.createElement(
     'div',
