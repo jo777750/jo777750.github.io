@@ -1,6 +1,7 @@
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
 import EI from './ExpenseItem.js';
+import { XY } from './ExpenseItem.js';
 
 var root2 = ReactDOM.createRoot(document.getElementById('buton'));
 var element2 = React.createElement(MyApp, null);
@@ -87,7 +88,7 @@ function MyButtonSep(_ref) {
 
 
 function RenderABC() {
-  var words = ['A\xA0for\xA0Apple', 'B\xA0for\xA0Boy', 'C\xA0for\xA0Car', 'D\xA0for\xA0Doctor', 'E\xA0for\xA0Egg', 'F\xA0for\xA0Frog', 'G\xA0for\xA0Girl', 'H\xA0for\xA0Hat', 'I\xA0for\xA0IceCream'];
+  var words = ['A\xA0for\xA0Apple', 'B\xA0for\xA0Boy', 'C\xA0for\xA0Car'];
 
   //const word=words.map(function xyz()())
 
@@ -118,31 +119,6 @@ function RenderABC() {
       'h3',
       null,
       words[2]
-    ),
-    React.createElement(
-      'h3',
-      null,
-      words[3]
-    ),
-    React.createElement(
-      'h3',
-      null,
-      words[4]
-    ),
-    React.createElement(
-      'h3',
-      null,
-      words[5]
-    ),
-    React.createElement(
-      'h3',
-      null,
-      words[6]
-    ),
-    React.createElement(
-      'h3',
-      null,
-      words[7]
     )
   );
 }
@@ -305,8 +281,17 @@ function Gallery() {
     )
   );
 }
+
 var x = [1, 2, 3, 4];
 var y = [].concat(x, [999]);
+
+function abc() {
+  console.log("inside cons");
+  alert(x);
+  alert(y);
+}
+abc();
+
 //alert(x)
 var parts = ["shoulders", "knees"];
 var lyrics = ["head"].concat(parts, ["and", "toes"]);
@@ -343,9 +328,14 @@ root5.render(element5);
 function Data1() {
   //always make 1st letter in CAPS
   return React.createElement(
-    'h1',
+    'div',
     null,
-    fuser.name
+    React.createElement(
+      'h1',
+      null,
+      fuser.name
+    ),
+    React.createElement(XY, null)
   );
 }
 var root = ReactDOM.createRoot(document.getElementById('root'));
