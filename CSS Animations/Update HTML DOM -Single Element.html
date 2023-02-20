@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .test {background-color: yellow;color: blue;}
+    .test1 {background-color: yellow;color: red;}
+    /*.test:hover{color:rebeccapurple;} */
+    .bluecolor {color: blue;}
+    .redcolor {color: red;}
+  </style>
+</head>
+<body>
+  <h5 id="position">This text will get replaced</h5>
+  <button class="test">blue</button>
+  <button class="test1">red</button>
+  <script>
+    const btn = document.querySelector(".test");
+    btn.addEventListener("click", () => {
+      a1 = document.createElement('h5');
+      a1.className = "bluecolor";
+      a1.textContent = 'Blue Updated';
+      console.log(a1);//console log output is <h5 class="first">Blue updated.</h5>
+      console.log(a1.innerHTML);//console log output is- Blue updated.
+      //newtext = document.createTextNode('abc');
+      document.getElementById('position').innerHTML = null;
+      document.getElementById('position').append(a1);
+      console.log("appended 1st time in browser");
+      document.getElementById('position').append(a1);
+      console.log("Not appending 2nd time in browser probably overwriting");
+      document.getElementById('position').append(a1);
+      console.log("Not appending 3rd time in browser  probably overwriting");
+    });
+    const btn1 = document.querySelector(".test1");
+    btn1.addEventListener("click", () => {
+      a1 = document.createElement('h5');
+      a1.className = "redcolor";
+      a1.textContent = 'Red updated.';
+      console.log(a1);//console log output is <h5 class="first">Demo text updated.</h5>
+      console.log(a1.innerHTML);//console log output is <h5 class="first">Demo text updated.</h5>
+      document.getElementById('position').innerHTML = a1.innerHTML;
+      //newtext = document.createTextNode('abc');
+      //document.getElementById('position').innerHTML=a1
+      //document.getElementById('position').append(a1);
+      document.getElementById('position').innerHTML = null;
+      document.getElementById('position').append(a1);
+    });
+  </script>
+</body>
+</html>
