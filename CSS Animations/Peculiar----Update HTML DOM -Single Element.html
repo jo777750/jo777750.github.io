@@ -30,13 +30,15 @@
       a1.className = "bluecolor";
       a1.textContent = 'Blue Updated2';
       document.getElementById('position').append(a1);
-	  //new h5 element, note using same name a1 or b1 wont matter bcoz document.createElement is thing tht matters to create element for appending
+	  //new h5 element, note use same name a1 or b1 wont matter but document.createElement is thing tht matters to append
 	  b1 = document.createElement('h5');
       b1.className = "bluecolor";
       b1.textContent = 'Blue Updated3';
 	  document.getElementById('position').append(b1);
       
-      //document.getElementById('position').append(a1);why this is comment bcoz of append peculiar phenononmon html ----
+      document.getElementById('position').append(a1);//a1 exists already so appending an existing element(a1) that is already in the DOM in another place which is this place , the element a1 gets moved here not copied as per traktor in https://stackoverflow.com/questions/75506103/i-am-unable-to-append-multiple-times-using-the-createdocumentfragment-js-call//here hence 'Blue Updated 2 ' appears
+	  //same thing refer append mdn-If the given child is a reference to an existing node in the document, appendChild() moves it from its current position to the new position.(just to make sure 2 similar nodes r not made SO EASILY other than using defrag or clone method)
+	  
     });
     const btn1 = document.querySelector(".test1");
     btn1.addEventListener("click", () => {
