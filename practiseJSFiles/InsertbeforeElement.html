@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>HTML</title>
+
+<head>
+  
+</head>
+<body>
+
+<p id="first-paragraph">This is the first paragraph.</p>
+<p id="second-paragraph">This is the second paragraph.</p>
+
+</body>
+  
+  <script>
+// Get a reference to the second paragraph element
+const secondParagraph = document.getElementById('second-paragraph');
+
+// Create a new element to insert
+const newElement = document.createElement('h5');
+newElement.textContent = ' This is some new content.';
+
+const newElement1 = document.createElement('h5');
+newElement1.textContent = ' This is some new content.';
+// Insert the new element before the existing content in the second paragraph
+secondParagraph.insertBefore(newElement, secondParagraph.firstChild);
+
+// Insert the new element after the existing content in the second paragraph
+secondParagraph.append(newElement1);
+
+  </script>
+</html>

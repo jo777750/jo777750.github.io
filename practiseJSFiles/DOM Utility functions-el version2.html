@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>H</title>
+<head>
+  <style>
+.test, .first { color: blue; }
+  </style>
+</head>
+<body>
+
+<h5 id="position">Text Color to be replaced to blue after hitting 'Change to Blue' button</h5>
+<button class="test">Change to blue</button>
+
+<script>
+const el = (sel, par) => (par || document).querySelector(sel);
+const elNew = (tag, prop) => Object.assign(document.createElement(tag), prop);
+
+
+// Example:
+
+const elPos = el('#position');
+
+el(".test").addEventListener("click", () => {
+  const elH5 = elNew('H5', {
+    textContent: "Blue updated",
+    className: "first",
+  });
+  elPos.innerHTML = "";  // Empty
+  elPos.append(elH5);    // Append!
+});
+  </script>
+  </body>
+</html>

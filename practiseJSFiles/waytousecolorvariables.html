@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classnames</title>
+
+
+</head>
+
+<body>
+    <h1 id="xyz">1hello</h1>
+    <h1 class="abc">2hello</h1>
+
+    <script async>
+        r = document.querySelector("#xyz")//ID select
+        console.log(r)
+        r = document.querySelector(".abc")//class select
+        console.log(r)
+        r = document.getElementById("xyz")//id select
+        console.log(r)
+
+
+        function changeColor() {
+            const elem = document.getElementById('xyz');
+            elem.style.color = "#ff0000";//WAY TO USE COLOR VARIABLES IN JAVASCRIPT
+        }
+
+        changeColor();
+    </script>
+</body>
+
+</html>

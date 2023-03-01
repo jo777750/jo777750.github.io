@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .test {
+      background-color: yellow;
+      color: blue;
+    }
+    .test1 {background-color: yellow;
+      color: red;}
+    .bluecolor {color: blue;}
+    .second {color: red;}
+  </style>
+</head>
+<body>
+  <h5 id="position">This text will get replaced</h5>
+  <button class="test">blue</button>
+  <button class="test1">red</button>
+  <script>
+    const btn = document.querySelector(".test");
+    btn.addEventListener("click", () => {
+      a1 = document.createElement('h5');
+      a1.className = "bluecolor";
+      a1.textContent = 'Blue updated';
+      console.log(a1); //console log output is <h5 class="first">Blue updated.</h5>
+      document.getElementById('position').innerText = null; //clear the position 
+      document.getElementById('position').innerText = "using defrag";
+	 
+	  fragment = document.createDocumentFragment(); //create fragment
+      fragment.append(a1.cloneNode(true));
+      fragment.append(a1.cloneNode(true));
+      fragment.append(a1.cloneNode(true));
+      fragment.append(a1.cloneNode(true));
+      fragment.append(a1.cloneNode(true));
+	  
+	  document.getElementById('position').append(fragment)
+	   //the above 6 code line works
+	  //z1 = document.createElement('p');
+      //z1.textContent = 'below for different way -using a reference...';
+	  //document.getElementById('position').append(z1)//append z1 element
+	  const newtextNode = document.createTextNode("Another approach:--");//to add a comment, create a new textnode
+      document.getElementById("position").append(newtextNode);//append the newtextNode
+      
+      document.getElementById('position').append(a1.cloneNode(true)); //append once 
+      document.getElementById('position').append(a1.cloneNode(true)); //append 2nd time 
+      document.getElementById('position').append(a1.cloneNode(true)); //append 3rd time 
+      document.getElementById('position').append(a1.cloneNode(true)); //append 4th time    
+      document.getElementById('position').append(a1.cloneNode(true)); //append 5th time  
+    });
+    const btn1 = document.querySelector(".test1");
+    btn1.addEventListener("click", () => {
+      a1 = document.createElement('h5');
+      a1.className = "second";
+      a1.textContent = 'Red updated.';
+      console.log(a1);//console log output is <h5 class="first">Red updated.</h5>
+      console.log(a1.innerHTML);//console log output-Red updated.
+      document.getElementById('position').innerHTML = a1.innerHTML;
+      //newtext = document.createTextNode('abc');
+      //document.getElementById('position').innerHTML=a1
+      //document.getElementById('position').append(a1);
+      document.getElementById('position').innerHTML = null;
+      document.getElementById('position').append(a1);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>H</title>
+<head>
+  <style>
+    
+    .bluecolor {color: blue;}
+    .redcolor {color: red;}  </style>
+</head>
+<body>
+
+<div id="xcontainer">
+<h5 id="position">Text Color to be replaced to blue after hitting 'Change to Blue' button</h5>
+<button class="test">Change to blue</button>
+</div>
+
+<div id="ycontainer">
+<h5 id="position">Text Color to be replaced to blue after hitting 'Change to Red' button</h5>
+<button class="test">Change to Red</button>
+</div>
+
+
+
+<script>
+// DOM utility functions:
+
+const el = (sel, par) => (par || document).querySelector(sel);
+
+// Example:
+
+
+
+el("#xcontainer .test").addEventListener("click", () => {
+  console.log("xcontainer");
+  y=document.createElement('h5');
+  y.className = "bluecolor";
+  y.textContent = "Hello world in blue";
+  el("#xcontainer #position").innerHTML = "";  // Empty
+  el("#xcontainer #position").append(y);      // Append!
+});
+
+el("#ycontainer .test").addEventListener("click", () => {
+  console.log("ycontainer");
+  y=document.createElement('h5');
+  y.className = "redcolor";
+  y.textContent = "Hello world in red";
+
+el("#ycontainer #position").innerHTML = "";  // Empty
+  el("#ycontainer #position").append(y);      // Append!
+});
+  </script>
+  </body>
+</html>
