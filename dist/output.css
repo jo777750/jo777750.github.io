@@ -18,10 +18,6 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
-
-.flex {
-  display: flex;
-}
 /*all css properties are nt inheritable
 layoutt can be grid or flex
 then define elements in the layout
