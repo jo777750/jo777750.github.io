@@ -1,20 +1,15 @@
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
-*/
 html {
   line-height: 1.5;
-  /* 1 */
 }
-/*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
 body {
   margin: 0;
-  /* 1 */
   line-height: inherit;
-  /* 2 */
 }
 /*
 Add the correct text decoration in Chrome, Edge, and Safari.
@@ -23,15 +18,7 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
-/*
-1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
-2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
-   This can trigger a poorly considered lint error in some tools but is included by design.
-*/
-i
-.block {
-  display: block;
-}
+
 .flex {
   display: flex;
 }
