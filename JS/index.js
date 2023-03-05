@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 //---------------------------------
  let comment = new Comment("Test");
-
+Document.append(comment)
  async function parallel() {
   //console.log("==PARALLEL with await Promise.all==");
 
