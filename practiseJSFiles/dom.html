@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>HTML</title>
+
+<head>
+  
+</head>
+<body>
+
+<p id="first-paragraph">This is the first paragraph.</p>
+<p id="second-paragraph">This is the second paragraph.</p>
+
+</body>
+  
+  <script>
+  {
+const fragment = document.createDocumentFragment();
+const li = fragment
+  .appendChild(document.createElement("section"))
+  .appendChild(document.createElement("ul"))
+  .appendChild(document.createElement("li"));
+li.textContent = "hello world";
+
+document.body.appendChild(fragment);
+}//block scope elseli already defined else error pops 
+{
+const fragment1 = document.createDocumentFragment();
+const li = fragment1
+  .appendChild(document.createElement("section"))
+  .appendChild(document.createElement("ol"))
+  .appendChild(document.createElement("li"));
+li.textContent = "hello world";
+
+document.body.appendChild(fragment1);
+}
+
+//bored:createtextnode is better than 2 statements of createElement and textcontent
+{
+let div = document.createElement("div");
+let p = document.createElement("mark");
+p.textContent = " planet";
+div.append("Some text", p);
+document.body.appendChild(div);
+}
+{
+let div = document.createElement("div");
+let p = document.createElement("mark");
+p.textContent = " planet";
+div.append("Some  OTHER text", p);
+document.body.appendChild(div);
+
+}
+  </script>
+</html>

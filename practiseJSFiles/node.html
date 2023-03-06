@@ -12,7 +12,7 @@
 <body>
   <h5 id="position">This text will get replaced</h5>
   <p id="p1"></p>//for NODES
-  <h3 id="h3position">Test
+  <h3 id="h3position">funnc
   <div>ggg</div>
     <a>a1</a>
     <a>a2
@@ -22,9 +22,20 @@
     <a>a4</a>
 	
   </h3>
+  
+  	<p id="p2">xxnode</p>
 </body>
   
   <script>
+
+
+ let comment = new Comment("89876Test");
+  let comment1 = new Comment("londom");
+
+document.getElementById("p2").append(comment.data,comment1.data);
+console.log(comment,comment1);
+console.log(typeof(comment));
+
  //ELEMENTS
    // innerHTML:The Element property innerHTML gets or sets the HTML or XML markup contained within the element. Setting the value of innerHTML removes all of the element's descendants and replaces them with nodes constructed by parsing the HTML given in the string htmlString
    
@@ -82,7 +93,13 @@
       newtext4 = document.createTextNode('jkl ');	
 	//scenario 1:
  //  document.getElementById("p1").append(newtext1,newtext2,newtext3,newtext4);//works as append can take multiple unique nodes
-  //  document.getElementById("p1").appendChild(newtext1,newtext2,newtext3,newtext4);//only abc is displayed ..remaining are ignored as appendChild only takes 1 element which is the 1st node
+  //  document.getElementById("p1").appendChild(newtext1,newtext2,newtext3,newtext4);//only abc is displayed ..remaining are ignored as appendChild only takes 1 element which is the 1st node.......KEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+  //DIFFERENCE,KEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+  //DIFFERENCE,KEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+  //DIFFERENCE,KEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+  //DIFFERENCE,KEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+  //DIFFERENCE,KEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+  //DIFFERENCE
 	 //scenario 2
 	 //1 
 //	 document.getElementById("p1").appendChild(newtext1);//WONT be displayed
@@ -98,11 +115,15 @@
      document.getElementById("p1").append(newtext1);//WONT be displayed
      document.getElementById("p1").append(newtext4);//WILL be displayed
      document.getElementById("p1").append(newtext1);//WILL be displayed 
+	 
+	 
 	 //3
-	  newtext5 = document.createTextNode('mno ');	  
-      newtext5 = document.createTextNode('pqr ');		 
-      newtext5 = document.createTextNode('stu ');		 
-   //   document.getElementById("p1").append(newtext5,newtext5,newtext5);//only stu will be shown
-      document.getElementById("p1").appendChild(newtext5,newtext5,newtext5);//only stu will be shown
+	  newtext500 = document.createTextNode('Amno ');	  
+      newtext501 = document.createTextNode('Bpqr ');		 
+      newtext502 = document.createTextNode('Cstu ');		 
+      document.getElementById("p1").appendChild(newtext500,newtext500,newtext500);//only Amno will be shown others ignnored as only 1 node is taken by appendChild function
+      document.getElementById("p1").appendChild(newtext500,newtext501,newtext502);//only Amno will be shown others ignnored as only 1 node is appendChild function
+      document.getElementById("p1").append(newtext502,newtext501,newtext500);// Cstu Bpqr Amno all will be shown
+	  
   </script>
 </html>
