@@ -50,7 +50,7 @@ let tr='{"https://create-react-app.dev/docs/getting-started":"React Start",\
 "./img/flipcard.html":"Flipcard",\
 "./subscribe.html":"subscribe",\
 "./react.html":"React stuff",\
-"./futureuse1.html":"future use",\
+"https://www.joshwcomeau.com/react/common-beginner-mistakes/":"React Begibber mistakes",\
 "./futureuse.2html":"future use",\
 "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#using_addeventlistener":"event listeners"\
 }';
