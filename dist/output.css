@@ -6,13 +6,6 @@ html {
 }
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
-*/
-body {
-  margin: 0;
-  line-height: inherit;
-   background-image: url("../paper.jpg");
-  
-}
 /*
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
@@ -25,7 +18,7 @@ layoutt can be grid or flex
 then define elements in the layout
 */
 body {
-  background: url('paper.jpg'); 
+  background: url('../paper.jpg'); 
   font-family: sans-serif;
   text-decoration:none;
   scroll-behavior: smooth;
