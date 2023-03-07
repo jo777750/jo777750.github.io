@@ -139,12 +139,11 @@ footer {
   padding: 20px;
   font-size: 18px;
 }
+/*
 div a {
   text-decoration:none;
 }
-.arow a{
-  text-decoration:none;
-}
+*/
 /* Visited links */
 a:visited {
   color: purple;
