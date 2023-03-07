@@ -123,6 +123,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   background-color: green;
+  top: 0;
   position: sticky;
 
 }
