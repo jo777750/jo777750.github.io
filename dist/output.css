@@ -23,7 +23,7 @@ layoutt can be grid or flex
 then define elements in the layout
 */
 body {
-  /*background: url('paper.jpg'); */
+  background: url('paper.jpg'); 
   font-family: sans-serif;
   text-decoration:none;
   scroll-behavior: smooth;
@@ -137,8 +137,8 @@ footer {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 14%;
-  box-shadow: 3px 3px 3px 3px rgb(102, 51, 53);
-  border-radius: 25% 10%;
+  box-shadow: 4px 4px 4px 4px rgb(247,244,251);
+  border-radius: 15% 10%;
   margin: 8px;
   padding: 20px;
   font-size: 18px;
