@@ -45,12 +45,12 @@ function a(){
 
 let tr='{"https://create-react-app.dev/docs/getting-started":"React Start",\
 "https://scrimba.com/learn/learnreact/first-react-coc0845dcb1a26cb0769a2fea":"React training",\
-"https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_accent-color":"CSS Playaround",\
+"https://www.digitalocean.com/community/tutorials":"Digital Ocean Tutorials",\
 "./page1.html":"NextPage",\
 "./img/flipcard.html":"Flipcard",\
 "./subscribe.html":"subscribe",\
 "./react.html":"React stuff",\
-"https://www.joshwcomeau.com/react/common-beginner-mistakes/":"React Begibber mistakes",\
+"https://www.joshwcomeau.com/react/common-beginner-mistakes/":"React Beginner mistakes",\
 "./futureuse.2html":"future use",\
 "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#using_addeventlistener":"event listeners"\
 }';
