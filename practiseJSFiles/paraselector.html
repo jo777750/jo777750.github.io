@@ -14,39 +14,38 @@ document.body.append(h5);//added h5 to DOM,,big mistake i did here
 h5.innerHTML= "<p class='para'>Hello </p>";//appends p to h5
 h5.querySelector(".para").append(" world");//
 */
-//2nd way
 
+
+/*
+2nd way
 h6=document.createElement('h5');
 p6=document.createElement('p');
 p6.textContent= "hello123";
 //p6.classList.add('para');//another way to add class name para to p6
 p6.className= "para";//add class name para to p6
-
-document.body.appendChild(h6);
 h6.appendChild(p6);
-
+document.body.appendChild(h6);
 h6.querySelector(".para").append(" 768world");//select CSS selectors of para value whose parent element is h6,
 //Calling querySelector() on an element restricts the search to the element's descendants, rather than searching the entire DOM.
-//Element.querySelector(),The querySelector() method of the Element interface returns the first element that is a descendant of the element on which it is invoked that matches the specified group of selectors.
-/*
-
-let h5=document.createElement('h5');
-let p = document.createElement('p');
-p.textContent = 'Test2:';
-p.classList.add('para');
-h5.appendChild(p);
-document.body.appendChild(h5);
-h5.className= "first";
-document.querySelector(".para").append(" hello");//works
-h5.querySelector(".para").append(" world");
-*/
-//console.log(document.children);
-console.log(document.childElementCount);
-
+//Element.querySelector(),The querySelector() method of the Element interface returns the first element that is a descendant of the element on which it is invoked that matches the specified group of selectors.why use append and not appendChild is because appendchild does not accept String object like " 786"
 //The Document method querySelector() document.querySelector(), returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.
 
+*/
 
+//3rd way
+
+
+const e4=(x1,x2)=>{console.log(x1,x2)};
+e4('ABC','DEF');//works
+
+h5=document.createElement('h5');
+p6=document.createElement('p');
+p6.textContent= "hello 123";
+p6.className= "para";
+h5.appendChild(p6);
+document.body.appendChild(h5);
+const e31=(x1,x2) => {x1.querySelector(x2).append("456 World");}
+e31(h5,'.para');
 
 </script>
-  
 </html>                    
