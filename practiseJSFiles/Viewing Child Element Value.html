@@ -35,19 +35,20 @@ h6.querySelector(".para").append(" 768world");//select CSS selectors of para val
 //3rd way
 
 
-const e4=(x1,x2)=>{console.log(x1,x2)};
-e4('ABC','DEF');//works
+const e4=(x1,x2)=>{console.log(x1,x2)};//define function
+e4('ABC','DEF');//call the function
 
 h5=document.createElement('h5');
 h5.setAttribute("id", "pa");
 h5.className= "parrot";
-
+//NOTE:H5ELEMENT HAS BOTH ID AND CLASS Values
 
 p6=document.createElement('p');
 p6.textContent= "hello 123";
 p6.setAttribute("id", "laugh");
-
 p6.className= "para";
+//NOTE:p6 ELEMENT HAS BOTH ID AND CLASS Values
+
 h5.appendChild(p6);
 document.body.appendChild(h5);
 const e31=(x1,x2) => {x1.querySelector(x2).append("456 World");}
