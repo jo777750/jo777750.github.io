@@ -17,6 +17,13 @@ a {
 layoutt can be grid or flex
 then define elements in the layout
 */
+
+@media screen and (min-width: 500px) {
+  p {
+    color: red;
+  }
+}
+
 body {
   background: url('paper.jpg'); 
   font-family: sans-serif;
