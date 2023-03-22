@@ -115,13 +115,13 @@ nav{
 .alig {
   text-align: center;
 }
-/*.y li{ display: inline; } always breaks the list horizontally*/
+
 .my_flexx {
   display: flex;
   flex-wrap: wrap;
   background-color: green;
   top: 0;
-  width:400px;
+  width:600px;
   /*position: sticky;*/
 
 }
@@ -135,11 +135,7 @@ nav{
   padding: 6px;
   font-size: 14px;
 }
-/*
-div a {
-  text-decoration:none;
-}
-*/
+
 /* Visited links */
 a:visited {
   color: purple;
