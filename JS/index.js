@@ -71,8 +71,7 @@ return Promise.resolve(2);
 //--------------------------------------------------
 // Make a list
 function b(){
-let str='{"":"Others:",\
-"https://academy.bigbinary.com/learn-basic-css":"learn basic css",\
+let str='{"https://academy.bigbinary.com/learn-basic-css":"learn basic css",\
 "https://javascript.info/modules-intro":"javascript.info modules",\
 "https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export":"2nd MDN example javascript modules",\
 "https://reactjs.org/docs/hello-world.html":"React hello world",\
