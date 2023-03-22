@@ -76,6 +76,8 @@ nav{
 .my_flexx {
   display: flex;
   background-color: green;
+  flex-wrap: wrap;
+
   justify-content: space-between;
   width:600px;
   /*position: sticky;*/
