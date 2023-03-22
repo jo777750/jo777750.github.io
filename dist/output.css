@@ -121,19 +121,18 @@ nav{
   flex-wrap: wrap;
   background-color: green;
   top: 0;
+  width:400px;
   /*position: sticky;*/
 
 }
 .my_flexx  div {
   background-color: deepskyblue;
   /*will override the green color*/
-  flex-grow: 0;
-  flex-shrink: 0;
   flex-basis: 14%;
   box-shadow: 4px 4px 4px 4px rgb(247,244,251);
   border-radius: 15% 10%;
   margin: 8px;
-  padding: 4px;
+  padding: 6px;
   font-size: 14px;
 }
 /*
