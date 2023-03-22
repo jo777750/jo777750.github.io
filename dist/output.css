@@ -18,11 +18,18 @@ layoutt can be grid or flex
 then define elements in the layout
 */
 
-@media screen and (min-width: 500px) {
-  p {
-    color: red;
+@media screen and (max-width: 600px) {
+  body {
+    color: blue;
   }
 }
+
+@media (orientation: landscape) {
+  body {
+    color: rebeccapurple;
+  }
+}
+
 
 body {
   background: url('paper.jpg'); 
