@@ -12,43 +12,33 @@
 				   color:rebeccapurple;
 					   }
 
-h3:nth-child(n+1) {
+h3:nth-child(n+1),h3:nth-child(2n+1),h3:nth-child(3n+1),h3:nth-child(4n+1),h3:nth-child(5n+1)   {
   width: 0px;
   color: red;
   border:5px solid magenta;
   overflow:hidden;
+  background: linear-gradient(#fecaca, #FFFF99);
+
   animation: animate 4s ease-in 1 forwards;
 }
 
 h3:nth-child(2n+1) {
-  width: 0px;
-  color: red;
   border:5px solid yellow;
-  overflow:hidden;
   animation: animate 5s ease-in 1 forwards;
 }
 
 h3:nth-child(3n+1) {
-  width: 0px;
-  color: red;
   border:5px solid purple;
-  overflow:hidden;
   animation: animated 5s ease-in 1 forwards;
 }
 
 h3:nth-child(4n+1) {
-  width: 0px;
-  color: red;
   border:5px solid green;
-  overflow:hidden;
   animation: animate 6s ease-in 1 forwards;
 }
 
 h3:nth-child(5n+1) {
-  width: 0px;
-  color: red;
   border:5px solid blue;
-  overflow:hidden;
   animation: animated 4s ease-in 1 forwards;
 }
 
@@ -70,33 +60,12 @@ h3:nth-child(5n+1) {
   }
 }
 
-
-/*
-
-h3:nth-child(odd) {
-  width: 0px;
-  color: tomato;
-  border:5px solid aquamarine;
-  overflow:hidden;
-  animation: animate 6s ease-in 1 forwards;
-}
-
-h3:nth-child(even) {
-  width: 0px;
-  color: tomato;
-  border:5px solid aquamarine;
-  overflow:hidden;
-  animation: animate 6s ease-in 1 forwards;
-}
-*/
-
-
 .box 
 {
   display: flex;
   justify-content:space-evenly;
 }
-	    </style>
+</style>
   </head>
   <body>
 <div class="box">
