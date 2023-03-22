@@ -60,7 +60,7 @@ h1 {
 }
 .rx
 {
-  font-size:40px;
+  font-size:20px;
   float:right;
 }
 nav{
@@ -138,7 +138,7 @@ footer {
   flex-wrap: wrap;
   background-color: green;
   top: 0;
-  position: sticky;
+  /*position: sticky;*/
 
 }
 .my_flexx  div {
@@ -151,7 +151,7 @@ footer {
   border-radius: 15% 10%;
   margin: 8px;
   padding: 20px;
-  font-size: 18px;
+  font-size: 12px;
 }
 /*
 div a {
