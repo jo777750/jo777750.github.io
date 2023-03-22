@@ -73,6 +73,24 @@ nav{
 /* clockwise:margin : top | right | bottom | left
    margin: 2px 1em 0 auto;
  */
+.my_flexx {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: green;
+  top: 0;
+  width:600px;
+  /*position: sticky;*/
+
+}
+.my_flexx div {
+  background-color: deepskyblue;
+  /*will override the green color*/
+  box-shadow: 4px 4px 4px 4px rgb(247,244,251);
+  border-radius: 15% 10%;
+  margin: 8px;
+  padding: 6px;
+  font-size: 14px;
+}
 
 /* python firstrow */
 #firstrow {
@@ -116,25 +134,7 @@ nav{
   text-align: center;
 }
 
-.my_flexx {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: green;
-  top: 0;
-  width:600px;
-  /*position: sticky;*/
 
-}
-.my_flexx  div {
-  background-color: deepskyblue;
-  /*will override the green color*/
-  flex-basis: auto;
-  box-shadow: 4px 4px 4px 4px rgb(247,244,251);
-  border-radius: 15% 10%;
-  margin: 8px;
-  padding: 6px;
-  font-size: 14px;
-}
 
 /* Visited links */
 a:visited {
