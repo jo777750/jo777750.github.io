@@ -89,7 +89,7 @@ footer {
   font-family: inherit;
   margin: 10px 100px 10px 0px;
   border-radius: 15px;
-  float:right;
+ /* float:right;*/
   width:43%;
   /* as items gonna float around this class so some space aka wdth shuld be given to them.Defines the width as a percentage of the containing block's width.*/
 }
@@ -151,7 +151,7 @@ footer {
   border-radius: 15% 10%;
   margin: 8px;
   padding: 20px;
-  font-size: 12px;
+  font-size: 14px;
 }
 /*
 div a {
