@@ -128,7 +128,7 @@ nav{
 .my_flexx  div {
   background-color: deepskyblue;
   /*will override the green color*/
-  flex-basis: 14%;
+  flex-basis: auto;
   box-shadow: 4px 4px 4px 4px rgb(247,244,251);
   border-radius: 15% 10%;
   margin: 8px;
