@@ -120,15 +120,7 @@ footer {
   width:43%;
   /* as items gonna float around this class so some space aka wdth shuld be given to them.Defines the width as a percentage of the containing block's width.*/
 }
-#tryout {
-  color:tomato;
-  position: sticky;
-  font-weight:bold;
-  font-size: 18px;
-  top: 40px;
-  right: 200px;
-  width: 280px;
-}
+
 .alig {
   text-align: center;
 }
