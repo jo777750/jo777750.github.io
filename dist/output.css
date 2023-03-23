@@ -28,7 +28,7 @@ h1 {
 .rx,#test
 {
   font-size:20px;
-  margin-left:60%; 
+  margin-left:50%; 
 }
 nav{
   /*burger contents is NOT Diplayed initially (until clicked)*/
@@ -119,10 +119,8 @@ a[href="https://today.bnomial.com/?20220720"]
 
 footer {
   background-color: teal;
-  text-decoration:none;
-  /*removes the  underline in the link*/
+  text-decoration:none;/*removes the  underline in the link*/
   border-radius: 15px;
-  margin: auto;
   text-align: center;
   width:40%;
   /* Defines the width as a percentage of the containing block's width.*/
