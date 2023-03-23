@@ -1,33 +1,4 @@
-/*
-1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
-2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
-html {
-  line-height: 1.5;
-}
-1. Remove the margin in all browsers.
-2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
-/*
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-/*all css properties are nt inheritable
-*/
-
-@media screen and (max-width: 600px) {
-  body {
-    color: blue;
-  }
-}
-
-@media (orientation: landscape) {
-  body {
-    color: rebeccapurple;
-  }
-}
-
+/*all css properties are nt inheritable*/
 
 body {
   background: url('paper.jpg'); 
@@ -35,9 +6,7 @@ body {
   text-decoration:none;
   scroll-behavior: smooth;
   scroll-padding-top:30px;
-  margin-top: 1.5em;
-  margin-left: 1.2em;
-  margin-right: 1.2em;
+  margin: 1.5em 1.2em 0 1.2em;
 }
 /* python row */
 h1 {
@@ -56,33 +25,26 @@ h1 {
   background-color: yellow;
   text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
 }
-.rx
+.rx,#test
 {
   font-size:20px;
-  float:right;
+  margin-left:60%; 
 }
 nav{
   /*burger contents is NOT Diplayed initially (until clicked)*/
   display:none;
 }
-#test{
-  float:right;
-}
-/* clockwise:margin : top | right | bottom | left
-   margin: 2px 1em 0 auto;
- */
+
 .my_flexx {
   display: flex;
   background-color: green;
   flex-wrap: wrap;
   justify-content: space-evenly;
   width:600px;
-  /*position: sticky;*/
 
 }
 .my_flexx div {
   background-color: deepskyblue;
-  /*will override the green color*/
   box-shadow: 4px 4px 4px 4px rgb(247,244,251);
   border-radius: 15% 10%;
   margin: 8px;
@@ -96,7 +58,6 @@ nav{
   font-family: inherit;
   margin: 10px 100px 10px 0px;
   border-radius: 15px;
- /* float:right;*/
   width:43%;
   /* as items gonna float around this class so some space aka wdth shuld be given to them.Defines the width as a percentage of the containing block's width.*/
 }
@@ -165,4 +126,16 @@ footer {
   text-align: center;
   width:40%;
   /* Defines the width as a percentage of the containing block's width.*/
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    color: blue;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    color: rebeccapurple;
+  }
 }
