@@ -14,8 +14,6 @@ a {
   text-decoration: inherit;
 }
 /*all css properties are nt inheritable
-layoutt can be grid or flex
-then define elements in the layout
 */
 
 @media screen and (max-width: 600px) {
@@ -77,8 +75,7 @@ nav{
   display: flex;
   background-color: green;
   flex-wrap: wrap;
-
-  justify-content: space-between;
+  justify-content: space-evenly;
   width:600px;
   /*position: sticky;*/
 
