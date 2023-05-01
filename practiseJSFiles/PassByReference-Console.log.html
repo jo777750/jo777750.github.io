@@ -1,0 +1,34 @@
+ 
+<p class="my_flexx"></>  
+</body>
+ <style>
+.my_flexx {
+  display: flex;
+  background-color: lightgrey;
+  justify-content: space-evenly;
+}
+ </style>
+<script>
+let JSONarray1='{"https://create-react-app.dev/docs/getting-started":"React Start",\
+"https://scrimba.com/learn/learnreact/first-react-coc0845dcb1a26cb0769a2fea":"React training",\
+"https://www.digitalocean.com/community/tutorials":"Digital Ocean Tutorials",\
+"./page1.html":"NextPage",\
+"./img/flipcard.html":"Flipcard",\
+"./subscribe.html":"subscribe",\
+"./react.html":"React stuff",\
+"https://www.joshwcomeau.com/react/common-beginner-mistakes/":"React Beginner mistakes",\
+"./futureuse.2html":"future use",\
+"https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#using_addeventlistener":"event listeners"\
+}';
+const obj = JSON.parse(JSONarray1);
+obj_deepclone=JSON.parse(JSON.stringify(obj));
+
+for (let key in obj) {
+  elem = document.createElement('div');
+  elem.setAttribute('id', obj[key]);
+  console.log(elem);
+  elem.innerHTML = `<a href=${key}>${obj[key]}</a>`;
+  document.querySelector('.my_flexx').append(elem);
+}
+</script>
+</html>
