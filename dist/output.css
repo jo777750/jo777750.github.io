@@ -34,7 +34,7 @@ nav{
   /*burger contents is NOT Diplayed initially (until clicked)*/
   display:none;
 }
-
+/* FLEX method which is either rows or columns, see SO Answer
 .my_flexx {
   display: flex;
   background-color: green;
@@ -47,6 +47,19 @@ nav{
   background-color: deepskyblue;
   box-shadow: 4px 4px 4px 4px rgb(247,244,251);
   border-radius: 15% 10%;
+  margin: 8px;
+  padding: 6px;
+  font-size: 14px;
+}*/
+/*grid way of doing alignment*/
+.my_flexx {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  background-color: green;
+  width: 600px;
+}
+.my_flexx div {
+  background-color: deepskyblue;
   margin: 8px;
   padding: 6px;
   font-size: 14px;
