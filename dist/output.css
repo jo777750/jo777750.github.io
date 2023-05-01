@@ -52,13 +52,13 @@ nav{
   font-size: 14px;
 }*/
 /*grid way of doing alignment*/
-.my_flexx {
+.my_grid {
   display: grid;
   grid-template-columns: repeat(5, auto);
   background-color: green;
   width: 600px;
 }
-.my_flexx div {
+.my_grid div {
   background-color: deepskyblue;
   box-shadow: 4px 4px 4px 4px rgb(247,244,251);
   margin: 8px;
