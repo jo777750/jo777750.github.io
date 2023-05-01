@@ -43,16 +43,16 @@ return Promise.resolve(1);
 //will throw an erro
 function a(){
 
-let ArrayofUrls='{"https://create-react-app.dev/docs/getting-started":"React Start",\
-"https://scrimba.com/learn/learnreact/first-react-coc0845dcb1a26cb0769a2fea":"React training",\
-"https://www.digitalocean.com/community/tutorials":"Digital Ocean Tutorials",\
+let ArrayofUrls='{"https://create-react-app.dev/docs/getting-started":"React-Start",\
+"https://scrimba.com/learn/learnreact/first-react-coc0845dcb1a26cb0769a2fea":"React-training",\
+"https://www.digitalocean.com/community/tutorials":"Digital-Ocean-Tutorials",\
 "./page1.html":"NextPage",\
 "./img/flipcard.html":"Flipcard",\
 "./subscribe.html":"subscribe",\
 "./react.html":"React stuff",\
-"https://www.joshwcomeau.com/react/common-beginner-mistakes/":"React Beginner mistakes",\
+"https://www.joshwcomeau.com/react/common-beginner-mistakes/":"React-Beginner-mistakes",\
 "./futureuse.2html":"future use",\
-"https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#using_addeventlistener":"event listeners"\
+"https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#using_addeventlistener":"event_listeners"\
 }';
 const obj = JSON.parse(ArrayofUrls);
 for ( let key in obj){
