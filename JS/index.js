@@ -43,7 +43,7 @@ return Promise.resolve(1);
 //will throw an erro
 function a(){
 
-let tr='{"https://create-react-app.dev/docs/getting-started":"React Start",\
+let ArrayofUrls='{"https://create-react-app.dev/docs/getting-started":"React Start",\
 "https://scrimba.com/learn/learnreact/first-react-coc0845dcb1a26cb0769a2fea":"React training",\
 "https://www.digitalocean.com/community/tutorials":"Digital Ocean Tutorials",\
 "./page1.html":"NextPage",\
@@ -54,17 +54,13 @@ let tr='{"https://create-react-app.dev/docs/getting-started":"React Start",\
 "./futureuse.2html":"future use",\
 "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#using_addeventlistener":"event listeners"\
 }';
-const obj121 = JSON.parse(tr);
-for ( let key in obj121){
-d1= document.createElement('div');
-d1.setAttribute('id',obj121[key]);
-//console.log(d1);
+const obj = JSON.parse(ArrayofUrls);
+for ( let key in obj){
+elem= document.createElement('div');
+elem.setAttribute('id',obj[key]);
 /*ANOTHER WAY TO STRING CONCATENATE IS USE JS TEMPLATE LITERAL`` */
-d1.innerHTML=`<a href=${key}>${obj121[key]}</a>`;
-//d1.innerHTML="<a href=" + key + ">" + obj121[key]+"</a>";
-
-document.querySelector('.my_flexx').appendChild(d1);
-//console.log(d1);
+elem.innerHTML=`<a href=${key}>${obj[key]}</a>`;
+document.querySelector('.my_grid').appendChild(elem);
 }
 return Promise.resolve(2);
 }
