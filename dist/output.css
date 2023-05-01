@@ -58,7 +58,7 @@ nav{
   display: grid;
   grid-template-columns: repeat(5, auto);
   background-color: green;
-  width: 600px;
+  width: 40%;
 }
 .my_grid div {
   background-color: deepskyblue;
