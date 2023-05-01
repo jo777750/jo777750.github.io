@@ -1,5 +1,7 @@
 /*all css properties are nt inheritable*/
-
+a{
+text-decoration:none;
+}
 body {
   background: url('paper.jpg'); 
   font-family: sans-serif;
