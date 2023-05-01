@@ -60,6 +60,7 @@ nav{
 }
 .my_flexx div {
   background-color: deepskyblue;
+  box-shadow: 4px 4px 4px 4px rgb(247,244,251);
   margin: 8px;
   padding: 6px;
   font-size: 14px;
