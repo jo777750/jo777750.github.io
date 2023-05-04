@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head> 
+ <style>
+
+.my_grid{
+  display: grid; 
+  grid-template-columns: repeat(4,1fr);  
+  gap: 0.5rem;
+}
+
+.col {
+  display: grid;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.menu_react       { background-color: lightgreen; }
+.menu_react > div { background-color: yellow; }
+.menu_python       { background-color: orange; }
+.menu_python > div { background-color: aqua; }
+.menu_news       { background-color: lightgrey; }
+.menu_news > div { background-color: tomato; }
+.menu_junk       { background-color: lightgreen; }
+.menu_junk > div { background-color: red; }
+a{text-decoration:none;}
+ </style>
+  </head> 
+<body>
+    <div class="my_grid">
+      <div class="col menu_react"></div>
+      <div class="col menu_python"></div>
+      <div class="col menu_news"></div>
+      <div class="col menu_junk"></div>
+    </div>
+</body>
+<script>
+// DOM helper functions
+const el = (sel) => document.querySelector(sel);
+const elNew = (tag, prop) => Object.assign(document.createElement(tag), prop);
+
+// Create vertical menu 
+const createMenu = (targetSelector, json) => {
+
+  const elTarget = el(targetSelector);
+  const obj = JSON.parse(json);
+  
+  for (let key in obj) {
+  
+    const elem = elNew("div", {innerHTML: `<a href=${key}>${obj[key]}</a>`,style: ` font-size:2em ` });
+    console.log(elem);
+    elTarget.append(elem);
+    
+  }
+};
+
+// Init:
+
+const reactURLs = '{\
+  "https://create-react-app.dev/docs/getting-started":"React Start",\
+  "https://scrimba.com/learn/learnreact/first-react-coc0845dcb1a26cb0769a2fea":"React training",\
+  "https://www.digitalocean.com/community/tutorials":"Digital Ocean Tutorials",\
+  "https://www.joshwcomeau.com/react/common-beginner-mistakes/":"React Beginner mistakes"\
+}';
+const pythonURLs = '{\
+  "https://docs.python.org/3/library/stdtypes.html#dict":"Python dictionary",\
+  "https://docs.python.org/3/library/stdtypes.html#typesseq-common":"Python Sequence",\
+  "https://docs.python.org/3/reference/expressions.html#comparisons":"Python expressions",\
+  "https://pythontutor.com/visualize.html#mode=edit":"Python visualiser",\
+  "https://towardsdatascience.com/unpacking-operators-in-python-306ae44cd480":"Unpacking operator"\
+}';
+
+const newsURLs = '{\
+  "https://www.cnn.com":"Cnn",\
+  "https://www.bbc.com":"BBC",\
+  "https://news.google.co.uk":"Google UK News"\
+}';
+
+const junkURLs = '{\
+  "https://www.a.com":"Junk a",\
+  "https://www.b.com":"Junk b",\
+  "https://www.c.com":"Junk c"\
+}';
+
+
+createMenu(".menu_react", reactURLs);
+createMenu(".menu_python", pythonURLs);
+createMenu(".menu_news", newsURLs);
+createMenu(".menu_junk", junkURLs);
+
+</script>
+</html>
