@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head> 
+ <style>
+.box {
+    display:flex;
+    width:200px;
+    height:200px;
+    border:5px solid red;
+}
+.box::before {
+content: 'Hello World';
+width:2px;
+}
+
+
+ </style>
+  </head> 
+
+<body>
+
+
+<h2 class="box"></h2><!-- from above style tag -->
+<h1 class="box"></h1><!-- from above style tag -->
+<a class="box" style="white-space:nowrap"></a> <!-- inline style only for a tag -->
+
+
+
+</body>
+
+</html>
