@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <script>
+	document.addEventListener("DOMContentLoaded", function() {
+// Scenario 1 
+ const btn = document.querySelector(".test");
+    btn.addEventListener("click", () => {
+  const fragment = document.createDocumentFragment();
+ var x = document.createElement('p');
+    x.className = "di";
+	x.style.background="aqua";
+  for (var i = 1; i < 6; i++) {
+  	x.textContent = ' Click to Change background color for ' + `${i}` + "p element";
+    x.id= 'para' + `${i}` ;
+   fragment.append(x.cloneNode(true));
+  }
+  document.body.append(fragment);
+ document.getElementById("para1").addEventListener("click", ()=>{para1.style.background="yellow"});
+ document.getElementById("para2").addEventListener("click", ()=>{para2.style.background="yellow"});
+	  function changeBackgroundColor(elem){
+	  elem.style.background="yellow";
+	  }
+	  //https://stackoverflow.com/questions/75979037/nested-addevent-listenerwhy-does-a-addeventlistener-click-event-act-differentlhttps://stackoverflow.com/questions/75979037/nested-addevent-listenerwhy-does-a-addeventlistener-click-event-act-differentl
+	  //this wont work properly -changeBackgroundColor(para3) as its not a function expression but a function execution:
+	  
+document.getElementById("para3").addEventListener("click", () => changeBackgroundColor(para3))
+document.getElementById("para4").addEventListener("click", () => changeBackgroundColor(para4))
+		});
+		
+		
+		
+});
+
+    </script>
+    <style>
+      .di{
+        border: solid green 2px;
+		margin-right:65em;
+		margin-top:4px;
+      }
+    </style>
+  </head>
+  <body>
+  <button class="test">create</button>
+  </body>
+</html>

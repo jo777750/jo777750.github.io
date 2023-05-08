@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <script>
+	document.addEventListener("DOMContentLoaded", function() {
+// Scenario 1 
+ const btn = document.querySelector(".test");
+    btn.addEventListener("click", () => {
+  const fragment = document.createDocumentFragment();
+ var x = document.createElement('p');
+    x.className = "di";
+	x.style.background="aqua";
+	x.textContent = ' Change background color ' ;
+  for (var i = 0; i < 5; i++) {
+	x.id= 'para' + `${i}` ;
+   fragment.append(x.cloneNode(true));
+   console.log(x.outerHTML);
+  }
+  document.body.append(fragment);
+	  function changeBackgroundColor(e){
+       e.target.style.background="yellow" ;
+	  }
+	  function change(elem){
+       elem.style.background="red" ;
+	  } 
+	   function change3(elem){
+       elem.style.background="gray" ;
+	  } 
+	 document.getElementById("para0").addEventListener("click",()=>{ change(para0)});//arrow
+	 document.getElementById("para1").addEventListener("click", changeBackgroundColor);//function expression
+	 document.getElementById("para2").addEventListener("click", changeBackgroundColor);//function expression
+	 document.getElementById("para3").addEventListener("click", ()=>{para3.style.background="yellow"};//arrow
+	 document.getElementById("para4").addEventListener("click",function () {change3(para4);});//anonymous function
+
+//getElementById("para0").removeEventListener("click", changeBackgroundColor);
+	//  getElementById("para1").addEventListener("click", changeBackgroundColor);getElementById("para2").addEventListener("click", //changeBackgroundColor);getElementById("para3").addEventListener("click", changeBackgroundColor);
+		});
+});
+/* Scenario 2 this gonna rerender ?
+var text = [];
+      function create() {
+for(var i = 0; i < 4; i += 1) {
+    text[i] = document.createElement("p");
+	text[i].className = "di";
+    text[i].innerHTML = "click to change background color" + "<br>";
+		console.log(text[i]);
+    document.body.appendChild(text[i]);
+}
+      }
+create();*/
+    </script>
+    <style>
+      .di{
+        border: solid green 2px;
+		margin-right:65em;
+		margin-top:4px;
+      }
+    </style>
+  </head>
+  <body>
+  <button class="test">create</button>
+  </body>
+</html>
