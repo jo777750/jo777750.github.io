@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <style>
+.p_relative {
+  position: relative;
+  left: calc(10px + (var(--offset) * 1px));
+  top: 10px;
+  
+}
+
+div {
+  position: relative;
+    left: 500px;
+  top: 180px;
+}
+span {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+
+
+    </style>
+  </head>
+<p class="p_relative" style="--offset: 10; color: blue;">relative1</p>
+<p class="p_relative" style="--offset: 20">relative2</p>
+<p class="p_relative" style="--offset: 30">relative3</p>
+<p class="p_relative" style="--offset: 40">relative4</p>
+<div>1st div here</div>
+<div>123<span>1st span here</span></div>
+</html>
