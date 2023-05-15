@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <!--
+This is a CSS code snippet that defines a custom shape called a "blob" using CSS shapes and pseudo-elements.
+
+The first part defines the main blob shape with a height and width of 150 pixels, and a border-radius that creates a slightly irregular shape with a bulging effect. The border-radius is defined using eight values, where the first four values create an oval shape for the top part of the blob, and the next four values create an oval shape for the bottom part of the blob.
+
+The background is set to transparent, meaning the blob will be see-through and will display any content or background behind it.
+
+The second part of the code defines two pseudo-elements, ::before and ::after, which are used to create additional shapes that are positioned relative to the main blob shape.
+
+The ::before pseudo-element is positioned absolutely, meaning it is positioned relative to the nearest positioned ancestor. It has a white background and a height and width of 15 and 50 pixels respectively. Its border-radius is set to create an irregular shape that adds to the overall organic appearance of the blob. It is positioned at the top-left corner of the blob, rotated 30 degrees counter-clockwise using the transform property.
+
+The ::after pseudo-element is also positioned absolutely and has a circular shape with a diameter of 10 pixels. It is positioned at a lower point on the left side of the blob, contributing to the overall blob-like appearance.-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 3px solid red;
+        }
+
+        .blob {
+
+            height: 150px;
+            width: 150px;
+            border-radius: 58% 43% 33% 64%/50% 38% 53% 50%;
+            background: transparent;
+            box-shadow: inset 6px 33px 20px 0px #800080, inset 20px 80px 15px 0px #Ffff00, 10px 20px 20px 0px #c9c9c9;
+
+        }
+
+        .blob::before {
+            content: 'abc';
+            position: absolute;
+            border-radius: 37% 54% 46% 46%;
+            background: white;
+            width: 50px;
+            transform: rotate(-30deg);
+            height: 15px;
+            top: 20px;
+            left: 20px;
+        }
+
+        .blob::after {
+
+            content: 'def';
+            position: absolute;
+            border-radius: 50%;
+            background: white;
+            width: 10px;
+            height: 10px;
+            top: 60px;
+            left: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="blob"></div>
+        <div>222</div>
+        <div>333</div>
+	</div>
+<!--interesting:keep adding divs and parent box will expand thats what is called  NESTED CONCEPT
+ -->    
+</body>
+</html>
