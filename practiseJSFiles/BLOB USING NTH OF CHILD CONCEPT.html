@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/*Note: nth of child creates CHILD ELEMENTS*/
+
+        .box {
+            border: 3px solid red;
+			width:500px;
+        }
+        .shape{
+            height: 150px;
+            width: 150px;
+            border-radius: 58% 43% 33% 64%/50% 38% 53% 50%;
+            background: transparent;
+            box-shadow: inset 6px 33px 20px 0px #00FFFF ;
+        }
+        .blob:nth-child(1)
+            {
+            position: absolute;
+            border-radius: 37% 54% 46% 46%;
+            background: white;
+            width: 50px;
+            transform: rotate(-30deg);
+            height: 15px;
+            top: 20px;
+            left: 40px;
+        }
+         .blob:nth-child(2)
+        {
+            position: absolute;
+            border-radius: 50%;
+            background: white;
+            width: 10px;
+            height: 10px;
+            top: 60px;
+            left: 20px;
+        }
+
+.blob:nth-child(3) {
+  position: absolute;
+  border-radius: 60%;
+  background: aqua;
+  width: 30px;
+  height: 10px;
+  top: 80px;
+  left: 20px;
+}
+
+.blob:nth-child(4) {
+  position: absolute;
+  border-radius: 70%;
+  background: red;
+  width: 40px;
+  height: 10px;
+  top: 100px;
+  left: 20px;
+}
+
+.blob:nth-child(5) {
+  position: absolute;
+  border-radius: 80%;
+  background: orange;
+  width: 40px;
+  height: 10px;
+  top: 120px;
+  left: 20px;
+}
+
+   </style>
+</head>
+<body>
+    <div class="shape">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+	</div>
+	</div>
+ </body>
+</html>
