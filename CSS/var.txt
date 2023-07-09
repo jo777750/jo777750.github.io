@@ -1,0 +1,117 @@
+let only block scoped not functioned scoped
+
+functioned scoped
+
+let x = 1;
+function s() {
+  let x = 2;
+  console.log(x);
+}
+s();
+console.log(x);
+2,1
+
+
+-------------
+ block scoped
+
+let x = 1;
+if (x === 1) {
+  let x = 2;
+  console.log(x);
+}
+console.log(x);
+2,1
+------------------------
+
+var variables are function-scoped or globally-block scoped variable,
+
+function-scoped :
+
+var x = 1;
+function s() {
+  var x = 2;
+  console.log(x);
+}
+s();
+console.log(x);
+2,1
+--------
+
+globally scoped(block) variable:
+
+var x = 1;
+if (x === 1) {
+  var x = 2;
+  console.log(x);
+}
+console.log(x);
+2,2
+------------------------
+n JavaScript, both var and let are used to declare variables, but they have some key differences:
+
+Scoping:
+var has function-level scope, meaning that a variable declared with var inside a function is only accessible within that function (or any nested functions). However, if var is declared outside of a function, it has global scope and can be accessed anywhere in the code.
+
+let has block-level scope, meaning that a variable declared with let is only accessible within the block it is declared in (for example, within a loop or an if statement). It is not accessible outside of that block.
+
+Hoisting:
+var is hoisted to the top of the function or global scope, which means that the variable declaration is moved to the top of the code, even if it appears later in the code. However, the value assigned to the variable is not hoisted.
+
+let is not hoisted. This means that if you try to use a let variable before it is declared, you will get a reference error.
+
+Re-assignment:
+Both var and let can be reassigned a new value.
+Overall, it is generally recommended to use let instead of var in modern JavaScript, as let provides better scoping and helps to avoid bugs caused by hoisting. However, if you are working with legacy code that uses var, you may need to continue using it to maintain compatibility.
+
+https://sass-lang.com/
+https://itgoldman.com/
+https://www.digitalocean.com/community/tutorials/how-to-format-code-with-prettier-in-visual-studio-code
+https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
+https://www.w3.org/TR/WD-DOM/introduction.html
+
+https://stackoverflow.com/questions/15754859/how-to-set-id-using-javascript
+
+const container = document.getElementById('container');
+
+http://getwaves.io
+
+2. Neumorphism
+http://neumorphism.io
+
+3. Glassmorphism
+http://glassmorphism.com
+
+4. Blob maker
+https://blobmaker.app
+
+5. Fancy border Radius
+https://9elements.github.io/fancy-border-radius/const myElement = el('.my-class', container);
+
+
+rochm480@gmail.com
+
+https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector
+
+https://stackoverflow.com/questions/13383886/making-a-short-alias-for-document-queryselectorall/35695073#35695073
+const query = document.querySelector.bind(document);
+const queryAll = document.querySelectorAll.bind(document);
+const fromId = document.getElementById.bind(document);
+const fromClass = document.getElementsByClassName.bind(document);
+const fromTag = document.getElementsByTagName.bind(document);
+Python uses import; C uses include; JavaScript has require. CSS has import;
+npx babel --watch sr --out-dir . --presets react-app/prod
+
+npm install babel-cli@6 babel-preset-react-app@3
+
+6.26.0 (babel-core 6.26.3)
+
+https://beta.reactjs.org/learn
+
+npm install @babel/cli@7 babel-preset-react-app@10
+npx babel --watch sr --out-dir . --presets babel-preset-react-app/prod 
+
+Functions starting with use are called Hooks.
+Props are arguments passed into React components. Props are passed to components via HTML attributes. props stands for properties.
+Props are the information that you pass to a JSX tag. For example, className, src, alt, width, and height are some of the props you can pass to an <img>
+jtrucker56tq

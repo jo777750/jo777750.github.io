@@ -1,0 +1,72 @@
+
+<html>
+ <meta charset="utf-8"/>
+        <title>Test</title>
+    <head>
+       <style>
+		#rect {
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #DFD;
+    width: 100px;
+    height: 100px;
+}
+       </style>
+
+    </head>
+
+    <body>
+	
+	<form action="my_script.php" method="post">
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name">
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email">
+
+  <label for="message">Message:</label>
+  <textarea name="message" id="message"></textarea>
+
+  <input type="submit" value="Submit">
+</form>
+    </body>
+</html>
+
+<script>
+
+class Example
+{
+    rect;
+
+    constructor(rect)
+    {
+        this.rect = rect;
+        this.rect.addEventListener('mousedown', event => this.onMouseDown(event));
+    }
+
+    onMouseDown(event)
+    {
+        document.addEventListener('mousemove', event => this.onMouseMove(event));
+        document.addEventListener('mouseup', event => this.onMouseUp(event));
+    }
+
+    onMouseMove(event)
+    {
+        this.rect.style.left = event.clientX;
+        this.rect.style.top = event.clientY;
+    }
+
+    onMouseUp(event)
+    {
+        document.removeEventListener('mousemove', this.onMouseMove);
+        document.removeEventListener('mouseup', this.onMouseUp);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function()
+{
+    var rect = document.getElementById('rect');
+    var ex = new Example(rect);
+});
+
+</script>
